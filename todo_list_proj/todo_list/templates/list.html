@@ -8,9 +8,21 @@
 <body>
     <h1>List Items</h1>
     <h2>List: {{ list_obj.list_name }}</h2>
+    <form action="{% url 'add_item' list_obj.id %}" method="post">
+        {% csrf_token %}
+        <label for="item_descr">New Item:</label>
+        <input type="text" id="item_descr" name="item_descr">
+        <button type="submit">Add Item</button>
+    </form>
     <ul>
         {% for item in list_items %}
-            <li>{{ item.item_descr }}</li>
+            <li>{{ item.item_descr }}
+                <form action="{% url 'delete_item' item.id %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+                </form>
+                <a href="{% url 'item_details' item.id %}"><button>Details</button></a>
+            </li>
         {% endfor %}
     </ul>
 </body>
