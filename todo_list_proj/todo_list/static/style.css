@@ -1,0 +1,20 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form {
+    margin: 0 auto;
+    width:250px;
+}
