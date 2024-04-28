@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Django Google Sign In</title>
 </head>
 <body>
     {% load socialaccount %}
-    <h2>Google Login</h2>
-    <a href="{% provider_login_url 'google' %}?next=/">Login With Google</a>
+    <div class="container-fluid">
+        <h1><p class="text-success text-center">Google Login</p></h1>
 
-    {% if user.is_authenticated %}
-    <p>You are signed in as {{user.email}}</p>
-    <a href="logout">Logout</a>
-    {% endif %}
+        {% if user.is_authenticated %}
+        <h3><p class="text-center">You are signed in as <u>{{user.email}}</u></p></h3>
+        <h4><p class="text-center"><a href="{% url 'logout_view' %}">Logout</a></p></h4>
+        {% else %}
+        <h4><p class="text-center"><a href="{% provider_login_url 'google' %}?next=/">Login</a></p></h4>
+        {% endif %}
+        <h4><p class="text-center"><a href="lists_index">My Lists</a></p></h4>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <figure class="text-center">
+      <blockquote class="blockquote">
+          <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
+      </blockquote>
+      <h4><figcaption class="blockquote-footer"><p class="text-success">
+        -Antoine de Saint-Exupery
+      </p></figcaption></h4>
+    </figure>
 </body>
 </html>

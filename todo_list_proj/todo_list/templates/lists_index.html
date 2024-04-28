@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Lists</title>
+</head>
+<body>
+    <div class="container">
+        <h1><p class="text-success text-center">Your Lists</p></h1>
+        <form action="{% url 'add_list' %}" method="post">
+            {% csrf_token %}
+            <label for="list_name"><h2>New List:</h2></label>
+            <input type="text" id="list_name" name="list_name">
+            <button type="submit">Add List</button>
+        </form>
+        <form action="{% url 'lists_index' %}" method="get">
+            <label for="filter">Filter by:</label>
+            <select id="filter" name="filter">
+                <option value="list_name">Alphabetically</option>
+                <option value="oldToNew">Date Added</option>
+            </select>
+            <button type="submit">Apply</button>
+        </form>
+        {% if lists %}
+            <ul class="list-group">
+                {% for list in lists %}
+                <li class="list-group-item"><h4>{{ list.list_name }}</h4>
+                        <form action="{% url 'delete_list' list.id %}" method="post" style="display: inline;">
+                            {% csrf_token %}
+                            <button type="submit">Delete</button>
+                        </form>
+                        <a href="{% url 'list_view' list.id %}"><button>Details</button></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <a href="{% url 'logout_view' %}">Logout</a>
+    </div>
+    <br><br>
+    <figure class="text-center">
+      <blockquote class="blockquote">
+          <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
+      </blockquote>
+      <h4><figcaption class="blockquote-footer"><p class="text-success">
+        -Antoine de Saint-Exupery
+      </p></figcaption></h4>
+    </figure>
+</body>
+</html>

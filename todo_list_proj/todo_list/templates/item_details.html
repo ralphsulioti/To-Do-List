@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Item Details</title>
 </head>
 <body>
-    <h1>Item Details</h1>
-    <p><strong>Description:</strong> {{ item.item_descr }}</p>
+    <h1><p class="text-success text-center">Item Details</p></h1>
+    <h3><p><strong>Description:</strong> {{ item.item_descr }}</p>
     <p><strong>Date Added:</strong> {{ item.item_date_added }}</p>
     <p><strong>Status:</strong> {% if item.item_done %}Done{% else %}Not Done{% endif %}</p>
-    <p><strong>List:</strong> {{ list_name }}</p>
-    <!-- Add other fields of the Item model as needed -->
-    <a href="{% url 'list_view' item.list_id.id %}">Back to List</a>
+        <p><strong>List:</strong> {{ list_name }}</p><br><br><br></h3><h4>
+        <a href="{% url 'list_view' item.list_id.id %}">Back to List</a></h4>
+    <br><br>
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+          <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
+      </blockquote>
+      <h4><figcaption class="blockquote-footer"><p class="text-success">
+        -Antoine de Saint-Exupery
+      </p></figcaption></h4>
+    </figure>
 </body>
 </html>
