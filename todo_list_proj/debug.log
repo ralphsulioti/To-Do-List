@@ -1,0 +1,1178 @@
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\templates with glob **/*.
+Watching dir C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates with glob **/*.
+Watching dir C:\Users\ralph\Documents\PyCharm\todo_list_proj\locale with glob **/*.mo.
+Watching dir C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\locale with glob **/*.mo.
+Watching dir C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale with glob **/*.mo.
+Watching dir C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\locale with glob **/*.mo.
+Watching dir C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\locale with glob **/*.mo.
+Watching dir C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\google\locale with glob **/*.mo.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\__init__.py first seen with mtime 1709054708.6110272
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\translation\__init__.py first seen with mtime 1709054708.783567
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\oauth2\provider.py first seen with mtime 1709749303.1782959
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\shutil.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\bindings\_rust.pyd first seen with mtime 1709749302.173923
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\images.py first seen with mtime 1709054708.536228
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\backends\__init__.py first seen with mtime 1709749302.1320083
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\debug.py first seen with mtime 1709054708.7875562
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\proxy.py first seen with mtime 1709749299.3027833
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\expressions.py first seen with mtime 1709054708.6339953
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\autocomplete.py first seen with mtime 1709054706.6599524
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\requests.py first seen with mtime 1709054708.35571
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_hashlib.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\boundfield.py first seen with mtime 1709054708.6598976
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\base64.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\__init__.py first seen with mtime 1709054708.5541797
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\selectors.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\signals.py first seen with mtime 1709054706.905373
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\signals.py first seen with mtime 1709054708.516281
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\tz.py first seen with mtime 1709054708.7466655
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\uploadedfile.py first seen with mtime 1709054708.538222
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\deconstruct.py first seen with mtime 1709054708.7656138
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\managers.py first seen with mtime 1709749302.827234
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py first seen with mtime 1709054708.6379552
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\intranges.py first seen with mtime 1709749300.708197
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py first seen with mtime 1709054708.7317054
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\autoreload.py first seen with mtime 1709054708.7277162
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\url.py first seen with mtime 1709749299.3077695
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_ssl.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_utils.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\base\constants.py first seen with mtime 1709749302.9838154
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_adapters.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\output.py first seen with mtime 1709054705.4870274
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\operator.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1709054708.1081858
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\multipartparser.py first seen with mtime 1709054708.719738
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\paginator.py first seen with mtime 1709054708.5152833
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\ed448.py first seen with mtime 1709749302.2018223
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\base.py first seen with mtime 1709054707.8049965
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\mime\text.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\constants.py first seen with mtime 1709054707.8010075
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\mime\multipart.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\forms.py first seen with mtime 1709749302.943922
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\http\server.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\__init__.py first seen with mtime 1709054708.5442064
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\handler.py first seen with mtime 1709054708.5422115
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\i18n.py first seen with mtime 1709054708.7895508
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\version.py first seen with mtime 1709054708.781572
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\enum.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\base64mime.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\local.py first seen with mtime 1709054705.794239
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\dis.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\ipv6.py first seen with mtime 1709054708.7735932
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\grouping.py first seen with mtime 1709054705.4830475
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\manage.py first seen with mtime 1710443131.9292612
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\translation.py first seen with mtime 1709054708.5302432
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\validators.py first seen with mtime 1709054708.5172787
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\filter_stack.py first seen with mtime 1709054705.4830475
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\request.py first seen with mtime 1709749299.3037803
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py first seen with mtime 1709749299.2878225
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\readers.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\actions.py first seen with mtime 1709054706.2161112
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\internal\jwtkit.py first seen with mtime 1709749302.9489088
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\filesystem.py first seen with mtime 1709054708.7426763
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\timezone.py first seen with mtime 1709054708.780574
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\x448.py first seen with mtime 1709749302.2048123
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\apps\__init__.py first seen with mtime 1709054705.9238925
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\generator.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\json.py first seen with mtime 1709054708.642943
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\numberformat.py first seen with mtime 1709054708.7765846
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\typing.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\edit.py first seen with mtime 1709054708.7985258
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_common.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\statement_splitter.py first seen with mtime 1709054705.4840353
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\operations.py first seen with mtime 1709054708.588089
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\__init__.py first seen with mtime 1709749299.301785
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\idnadata.py first seen with mtime 1709749300.7071967
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\schema.py first seen with mtime 1709054708.616014
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\asgi.py first seen with mtime 1709054708.5442064
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\utils.py first seen with mtime 1709054708.5481954
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\charset.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\pickle.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\models.py first seen with mtime 1709054708.6279821
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\__init__.py first seen with mtime 1709749302.815267
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\hashable.py first seen with mtime 1709054708.7706006
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\mimetypes.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\http\cookies.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\lorem_ipsum.py first seen with mtime 1709054708.7755873
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\log.py first seen with mtime 1709054708.7755873
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\cache.py first seen with mtime 1709054708.790548
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\serialization\base.py first seen with mtime 1709749302.2137885
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\serialization\__init__.py first seen with mtime 1709749302.212791
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\creation.py first seen with mtime 1709054708.613022
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\_functions.py first seen with mtime 1709054708.6110272
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\commands\__init__.py first seen with mtime 1709054708.5571716
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\utils.py first seen with mtime 1709054705.4810586
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\__future__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py first seen with mtime 1709054706.9003868
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py first seen with mtime 1709054708.6549108
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\ctypes\_endian.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\__init__.py first seen with mtime 1709054708.6469321
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\special.py first seen with mtime 1709054708.6289794
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_socket.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\backends.py first seen with mtime 1709054706.8964212
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\models.py first seen with mtime 1709749300.9666657
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\logging\handlers.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\management.py first seen with mtime 1709054708.352718
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\package_data.py first seen with mtime 1709749300.708197
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\taskgroups.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\temp.py first seen with mtime 1709054708.538222
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\subprocess.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\readers.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\compatibility\django_4_0.py first seen with mtime 1709054708.5322385
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\json\scanner.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\admin.py first seen with mtime 1709054708.351721
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\common.py first seen with mtime 1709054708.7915447
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\__init__.py first seen with mtime 1709749300.7042046
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\admin_modify.py first seen with mtime 1709054706.6559358
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\__init__.py first seen with mtime 1709054708.7217324
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\helpers.py first seen with mtime 1709054706.2201009
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\_policybase.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\encoding.py first seen with mtime 1709054708.7686062
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\conf.py first seen with mtime 1709054708.7556405
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\servers\basehttp.py first seen with mtime 1709054708.5791132
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_wmi.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\apps.py first seen with mtime 1709054708.503316
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\md__mypyc.cp312-win_amd64.pyd first seen with mtime 1709749300.9656653
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\__init__.py first seen with mtime 1709749302.1988282
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py first seen with mtime 1709054708.6120253
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\__init__.py first seen with mtime 1709054708.7366922
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\state.py first seen with mtime 1709054708.6239927
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\quoprimime.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\copy.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\models.py first seen with mtime 1709749302.9459167
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\ipaddress.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\formsets.py first seen with mtime 1709054708.6618917
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\base_user.py first seen with mtime 1709054706.897418
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py first seen with mtime 1709749299.3087661
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\_cffi_backend.cp312-win_amd64.pyd first seen with mtime 1709749301.7621272
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\base.py first seen with mtime 1709749302.2187755
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\__init__.py first seen with mtime 1709054707.7990127
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\structures.py first seen with mtime 1709749301.1736398
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\base.py first seen with mtime 1709054708.5412147
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\certs.py first seen with mtime 1709749301.1676555
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py first seen with mtime 1709749299.301785
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\current_thread_executor.py first seen with mtime 1709054705.793246
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\models.py first seen with mtime 1709054708.3547127
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\__init__.py first seen with mtime 1709749302.1918468
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\admin.py first seen with mtime 1709054706.8953998
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\base.py first seen with mtime 1709054708.5541797
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\security.py first seen with mtime 1709054708.726719
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\glob.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\models.py first seen with mtime 1709054708.1071875
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\__init__.py first seen with mtime 1709054705.475059
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1709054708.1081858
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\__init__.py first seen with mtime 1709054708.6289794
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\_compat_pickle.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\concurrent\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\__init__.py first seen with mtime 1709054708.5242596
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\_asymmetric.py first seen with mtime 1709749302.1918468
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\templatetags\account.py first seen with mtime 1709749302.8382046
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\asyncio.py first seen with mtime 1709054708.75963
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\__init__.py first seen with mtime 1709054708.651919
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\library.py first seen with mtime 1709054708.732702
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\signal.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\tokens.py first seen with mtime 1709054706.905373
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\inspect.py first seen with mtime 1709054708.7725952
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py first seen with mtime 1709749301.1706476
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\http\client.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\client.py first seen with mtime 1709054708.5850973
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\oauth2\client.py first seen with mtime 1709749303.1782959
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templatetags\allauth.py first seen with mtime 1709749303.4256344
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\management\__init__.py first seen with mtime 1709054708.5092998
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\cookies.py first seen with mtime 1709749301.1686528
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\ciphers\__init__.py first seen with mtime 1709749302.2058096
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\templatetags\socialaccount.py first seen with mtime 1709749303.341858
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\datastructures.py first seen with mtime 1709054708.6539125
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_8.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\utils.py first seen with mtime 1709749301.1736398
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\dates.py first seen with mtime 1709054708.7656138
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\warnings.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\apps\registry.py first seen with mtime 1709054705.9258878
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\heapq.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\files.py first seen with mtime 1709054708.527252
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\schema.py first seen with mtime 1709054708.588089
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py first seen with mtime 1709749301.1656606
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\status_codes.py first seen with mtime 1709749301.172642
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\transports.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\__init__.py first seen with mtime 1709749302.2177777
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\fnmatch.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\api_jws.py first seen with mtime 1709749299.6449072
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\__init__.py first seen with mtime 1709749299.2948036
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\jwk_set_cache.py first seen with mtime 1709749299.6478994
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\__init__.py first seen with mtime 1709054708.7576354
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\platform.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\apps.py first seen with mtime 1709749302.824242
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\staggered.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\__init__.py first seen with mtime 1709054708.5322385
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\oid.py first seen with mtime 1709749302.2227645
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\difflib.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\others.py first seen with mtime 1709054705.4860303
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\google\views.py first seen with mtime 1709749303.114466
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\mixins.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\autoreload.py first seen with mtime 1709054708.760627
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_tasks.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\exceptions.py first seen with mtime 1709054705.4770539
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\adapter.py first seen with mtime 1709749302.9419582
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\certifi\__init__.py first seen with mtime 1709749301.1267414
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\_weakrefset.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\features.py first seen with mtime 1709054708.61402
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\csrf.py first seen with mtime 1709054708.723727
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\_abc.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\extensions.py first seen with mtime 1709749302.2197723
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\lexer.py first seen with mtime 1709054705.4790485
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\collections\abc.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\core\internal\__init__.py first seen with mtime 1709749302.8531644
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\management\commands\__init__.py first seen with mtime 1709054708.5092998
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\python.py first seen with mtime 1709054708.576121
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\__init__.py first seen with mtime 1709054705.9268854
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\__init__.py first seen with mtime 1709054708.6259875
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\hashlib.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\deprecation.py first seen with mtime 1709054708.767609
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_subprocess.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\__init__.py first seen with mtime 1709054708.518276
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py first seen with mtime 1709054706.9043758
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\quopri.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\signals.py first seen with mtime 1709054708.6389525
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\_tzpath.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\sysconfig.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_lzma.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\csrf.py first seen with mtime 1709054708.5332358
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\__init__.py first seen with mtime 1709054706.2151148
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\__init__.py first seen with mtime 1709054708.5202706
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\encoders.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\async_checks.py first seen with mtime 1709054708.5252566
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\exceptions.py first seen with mtime 1709054708.7566392
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\functools.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py first seen with mtime 1709054708.5811076
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\base.py first seen with mtime 1709054708.5202706
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\_os.py first seen with mtime 1709054708.7586327
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py first seen with mtime 1709054708.7336993
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_ctypes.pyd first seen with mtime 1707275454.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\futures.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\hmac.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\opcode.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py first seen with mtime 1709054708.545204
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py first seen with mtime 1709054708.5112944
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\views.py first seen with mtime 1709054708.5083025
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py first seen with mtime 1709749299.3048022
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\response.py first seen with mtime 1709054708.720734
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\core.py first seen with mtime 1709749300.7061992
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\subprocess.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\forms.py first seen with mtime 1709054707.0968893
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\color.py first seen with mtime 1709054708.5551767
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\operations.py first seen with mtime 1709054708.6150174
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\legacy.py first seen with mtime 1709749300.9626732
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\compatibility\__init__.py first seen with mtime 1709054708.5312412
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py first seen with mtime 1709054708.7765846
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\model_checks.py first seen with mtime 1709054708.5282493
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\oauth2\__init__.py first seen with mtime 1709749303.177298
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\converters.py first seen with mtime 1709054708.7556405
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\base.py first seen with mtime 1709054708.5840995
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\sslproto.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\dispatch\__init__.py first seen with mtime 1709054708.6569054
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\app_settings.py first seen with mtime 1709749302.9429255
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\math.py first seen with mtime 1709054708.6489267
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\__init__.py first seen with mtime 1709054708.7187393
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\reindent.py first seen with mtime 1709054705.4870274
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__version__.py first seen with mtime 1709749301.163666
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\engine\__init__.py first seen with mtime 1709054705.4820404
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list_proj\urls.py first seen with mtime 1710443252.2051027
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\base\__init__.py first seen with mtime 1709749302.982818
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\filepost.py first seen with mtime 1709749299.2918117
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\termcolors.py first seen with mtime 1709054708.7785802
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\management\__init__.py first seen with mtime 1709054707.0809312
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\resolvers.py first seen with mtime 1709054708.7566392
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\__init__.py first seen with mtime 1709054708.5840995
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\apps\config.py first seen with mtime 1709054705.9248974
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\base.py first seen with mtime 1709054708.5352306
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\urls.py first seen with mtime 1709749302.820253
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\re\_casefix.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\tokens.py first seen with mtime 1709054705.489022
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\base_session.py first seen with mtime 1709054708.1051939
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\constants.py first seen with mtime 1709054708.652916
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\context.py first seen with mtime 1709054708.7287128
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\__init__.py first seen with mtime 1709054705.9218976
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\random.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssltransport.py first seen with mtime 1709749299.3067718
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\http\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\middleware.py first seen with mtime 1709054707.8020048
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\utils.py first seen with mtime 1709749300.9676826
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\packages.py first seen with mtime 1709749301.1716447
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1709054708.1061912
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\window.py first seen with mtime 1709054708.6509209
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\base.py first seen with mtime 1709054708.5332358
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\caches.py first seen with mtime 1709054708.5262542
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_decimal.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\utils.py first seen with mtime 1709054708.5083025
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\header.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\deletion.py first seen with mtime 1709054708.632969
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\sql.py first seen with mtime 1709054705.480046
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\servers\__init__.py first seen with mtime 1709054708.5781155
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_uuid.pyd first seen with mtime 1707275450.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\base\utils.py first seen with mtime 1709749302.98581
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\trsock.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\validators.py first seen with mtime 1709054706.907368
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\models.py first seen with mtime 1709054708.6628897
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\__init__.py first seen with mtime 1709054708.7536466
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\proxy.py first seen with mtime 1709054708.6439402
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\__init__.py first seen with mtime 1709054706.6549375
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\tree.py first seen with mtime 1709054708.780574
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\name.py first seen with mtime 1709749302.2217672
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related_descriptors.py first seen with mtime 1709054708.6449373
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\debug.py first seen with mtime 1709054708.7935393
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\textwrap.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\utils.py first seen with mtime 1709054708.639951
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\__init__.py first seen with mtime 1709749302.1300123
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query_utils.py first seen with mtime 1709054708.6379552
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_legacy.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\exceptions.py first seen with mtime 1709054708.5152833
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\datetime.py first seen with mtime 1709054708.6489267
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\utils.py first seen with mtime 1709054707.803002
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\warnings.py first seen with mtime 1709749299.6508915
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\dispatch\dispatcher.py first seen with mtime 1709054708.657903
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\introspection.py first seen with mtime 1709054708.61402
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\urls.py first seen with mtime 1709749302.8302262
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\exceptions.py first seen with mtime 1709054708.6180086
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\__init__.py first seen with mtime 1709054708.790548
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\gettext.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\_internal_utils.py first seen with mtime 1709749301.1646633
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_futures.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\api.py first seen with mtime 1709054707.8000097
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\log.py first seen with mtime 1709054706.6579306
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\urllib\response.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\filesystem.py first seen with mtime 1709054708.5412147
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\ed25519.py first seen with mtime 1709749302.2008233
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\crypto.py first seen with mtime 1709054708.7626226
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\wsgiref\util.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\wsgi.py first seen with mtime 1709054708.518276
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\finders.py first seen with mtime 1709054708.5043135
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\api_jwk.py first seen with mtime 1709749299.6439202
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\select.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\ctypes\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\core\internal\http.py first seen with mtime 1709749302.8531644
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\html\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\_common.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_collections.py first seen with mtime 1709749299.286825
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\urls\__init__.py first seen with mtime 1709054706.2121217
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\forms.py first seen with mtime 1709054708.6608949
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\reauthentication.py first seen with mtime 1709749302.829229
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\encodings\idna.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py first seen with mtime 1709054708.7965312
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\api.py first seen with mtime 1709749300.9606788
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\locale.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\adapter.py first seen with mtime 1709749302.8222475
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\models.py first seen with mtime 1709749302.8282318
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\utils.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\utils.py first seen with mtime 1709749302.82125
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related.py first seen with mtime 1709054708.6449373
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\main.py first seen with mtime 1709054706.660947
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\executor.py first seen with mtime 1709054708.6190062
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\global_settings.py first seen with mtime 1709054705.9278827
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\hashers.py first seen with mtime 1709054706.9013836
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\mime\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\token.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\related_lookups.py first seen with mtime 1709054708.6459346
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\_cipheralgorithm.py first seen with mtime 1709749302.1928446
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\reverse_related.py first seen with mtime 1709054708.6469321
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\views.py first seen with mtime 1715270559.0700593
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\pathlib.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\database.py first seen with mtime 1709054708.5262542
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\widgets.py first seen with mtime 1709054706.2250881
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\decorators.py first seen with mtime 1709749302.8172617
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\cd.py first seen with mtime 1709749300.9606788
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\static.py first seen with mtime 1709054708.7466655
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\glob.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\utils.py first seen with mtime 1709054708.6638873
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\exceptions.py first seen with mtime 1709054708.732702
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\sites.py first seen with mtime 1709054706.2230935
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\html.py first seen with mtime 1709054708.771598
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\encodings\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\checks.py first seen with mtime 1709054707.0958922
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\features.py first seen with mtime 1709054708.5860944
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\utils.py first seen with mtime 1709054708.7576354
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\management\commands\runserver.py first seen with mtime 1709054708.5661478
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\_header_value_parser.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\dateformat.py first seen with mtime 1709054708.7646174
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\utils.py first seen with mtime 1709749302.1290152
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\request.py first seen with mtime 1709054708.720734
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\bisect.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\connection.py first seen with mtime 1709054708.7626226
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\recorder.py first seen with mtime 1709054708.6219988
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_base_connection.py first seen with mtime 1709749299.2858276
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\oauth2\utils.py first seen with mtime 1709749303.18029
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\signals.py first seen with mtime 1709749302.829229
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\threads.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\__init__.py first seen with mtime 1709054708.640972
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\collections\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\__init__.py first seen with mtime 1709054708.7865582
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\bz2.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py first seen with mtime 1709054708.7336993
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\verification.py first seen with mtime 1709749302.2227645
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\getpass.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\ec.py first seen with mtime 1709749302.1998258
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\mime\nonmultipart.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\serialization\ssh.py first seen with mtime 1709749302.215783
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\right_margin.py first seen with mtime 1709054705.4880245
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\bindings\__init__.py first seen with mtime 1709749302.135997
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\iterators.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\locks.py first seen with mtime 1709054708.536228
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\subqueries.py first seen with mtime 1709054708.6559074
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py first seen with mtime 1709054708.7416785
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\where.py first seen with mtime 1709054708.6559074
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\helpers.py first seen with mtime 1709749302.9449193
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\models.py first seen with mtime 1709054706.2210984
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\options.py first seen with mtime 1709054708.636959
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\admin.py first seen with mtime 1709749302.9419582
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\signing.py first seen with mtime 1709054708.516281
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\decorators.py first seen with mtime 1709749302.8262372
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py first seen with mtime 1709054706.222095
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\__init__.py first seen with mtime 1709054708.574126
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\text.py first seen with mtime 1709054708.6509209
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\itercompat.py first seen with mtime 1709054708.7735932
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\fields.py first seen with mtime 1709749299.29082
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\indexes.py first seen with mtime 1709054708.6349635
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\authentication.py first seen with mtime 1709749302.8252392
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\_serialization.py first seen with mtime 1709749302.1938698
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\lookups.py first seen with mtime 1709054708.6349635
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\app_settings.py first seen with mtime 1709749302.8232446
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\widgets.py first seen with mtime 1709054708.6648839
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\app_directories.py first seen with mtime 1709054708.7406807
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\_markupbase.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\__init__.py first seen with mtime 1709749302.9409304
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\apps.py first seen with mtime 1709054707.0948942
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\response.py first seen with mtime 1709749299.3037803
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\choices.py first seen with mtime 1709054708.7616255
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\linecache.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\__init__.py first seen with mtime 1709054708.5402172
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\registry.py first seen with mtime 1709054708.5282493
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\l10n.py first seen with mtime 1709054708.7456672
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\mime\base.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\conf\locale\__init__.py first seen with mtime 1709054705.9328692
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\fractions.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\text.py first seen with mtime 1709054708.7795773
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\encodings\aliases.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\apps.py first seen with mtime 1709054707.8000097
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\unicodedata.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\__init__.py first seen with mtime 1709749299.28483
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\admin.py first seen with mtime 1713462643.1228282
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py first seen with mtime 1709054708.7925417
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\password_validation.py first seen with mtime 1709054706.9043758
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\utils.py first seen with mtime 1709749302.203815
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\__init__.py first seen with mtime 1709054705.4850323
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\wsgiref\simple_server.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\errors.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\string.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\datastructures.py first seen with mtime 1709054708.7636192
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\cache.py first seen with mtime 1709054708.7446706
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\signals.py first seen with mtime 1709054708.5831027
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\constants.py first seen with mtime 1709054708.630975
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py first seen with mtime 1709054708.7287128
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\headerregistry.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\pkgutil.py first seen with mtime 1707275418.0
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\apps.py first seen with mtime 1710443145.647875
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\utils.py first seen with mtime 1709054708.7356942
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\__init__.py first seen with mtime 1709054707.0938716
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\__init__.py first seen with mtime 1709054708.5811076
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\utils.py first seen with mtime 1709749299.6498942
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaultfilters.py first seen with mtime 1709054708.7307081
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\inspect.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\cookie.py first seen with mtime 1709054708.7187393
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py first seen with mtime 1709054708.6359613
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\google\provider.py first seen with mtime 1709749303.1124713
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\__init__.py first seen with mtime 1709054705.7922454
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\wsgiref\headers.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\response.py first seen with mtime 1709749299.2938066
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py first seen with mtime 1709749301.1656606
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\copyreg.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\dsa.py first seen with mtime 1709749302.1998258
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\safestring.py first seen with mtime 1709054708.777582
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\http\cookiejar.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\datetime.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\log.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\checks.py first seen with mtime 1709054706.8984022
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_zoneinfo.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\validation.py first seen with mtime 1709054708.589086
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\formatter.py first seen with mtime 1709054705.4780686
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\tokenize.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\__init__.py first seen with mtime 1709054708.503316
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\auth.py first seen with mtime 1709749301.166658
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\__init__.py first seen with mtime 1709054708.3507242
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\app_settings.py first seen with mtime 1709749302.8162644
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\mixins.py first seen with mtime 1709054708.642943
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\__init__.py first seen with mtime 1709749302.1270204
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\traceback.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\reduction.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\constants.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\__init__.py first seen with mtime 1709054706.8944151
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\pprint.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\html\entities.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\x25519.py first seen with mtime 1709749302.2048123
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\asgiref\sync.py first seen with mtime 1709054705.7962346
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\queue.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py first seen with mtime 1709054705.9238925
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\filters\aligned_indent.py first seen with mtime 1709054705.4860303
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\feedparser.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\google\urls.py first seen with mtime 1709749303.1134684
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\translation\reloader.py first seen with mtime 1709054708.783567
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\__init__.py first seen with mtime 1709749302.9539201
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\threading.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\urllib\error.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\json.py first seen with mtime 1709054708.5751235
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\admin.py first seen with mtime 1709054707.0938716
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\keyword.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\client.py first seen with mtime 1709054708.613022
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\types.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\coroutines.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\exceptions.py first seen with mtime 1709749301.1686528
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\logging\config.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\base.py first seen with mtime 1709054706.6579306
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\detail.py first seen with mtime 1709054708.7975287
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py first seen with mtime 1709054708.5831027
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\common.py first seen with mtime 1709054708.723727
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\templatetags\__init__.py first seen with mtime 1709749303.341858
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\sqlite3\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\exceptions.py first seen with mtime 1709749299.6469066
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\apps.py first seen with mtime 1709054708.1041968
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\jwks_client.py first seen with mtime 1709749299.648897
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\dateparse.py first seen with mtime 1709054708.7646174
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\management\__init__.py first seen with mtime 1709054707.2464886
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\api_jwt.py first seen with mtime 1709749299.6459048
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\numbers.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\__init__.py first seen with mtime 1709054708.5352306
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\struct.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\wsgiref\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py first seen with mtime 1709054708.7666113
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\__init__.py first seen with mtime 1709054707.8049965
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\compat.py first seen with mtime 1709749301.1676555
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\cli.py first seen with mtime 1709054705.4760568
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\middleware.py first seen with mtime 1709054706.9023812
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\checks.py first seen with mtime 1709054708.352718
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\move.py first seen with mtime 1709054708.5372248
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\base.py first seen with mtime 1709054708.7376895
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py first seen with mtime 1709054708.640972
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\hashes.py first seen with mtime 1709749302.1958365
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\internal\__init__.py first seen with mtime 1709749302.9489088
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\models.py first seen with mtime 1713462574.2874432
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\signals.py first seen with mtime 1709749302.9469147
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\translation\trans_real.py first seen with mtime 1709054708.7855606
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\nturl2path.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\creation.py first seen with mtime 1709054708.5860944
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\wsgi.py first seen with mtime 1709054708.5462008
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\migration.py first seen with mtime 1709054708.6210008
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\utils.py first seen with mtime 1709054708.6239927
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\transaction.py first seen with mtime 1709054708.58011
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\__init__.py first seen with mtime 1709054708.58011
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\renderers.py first seen with mtime 1709054708.6638873
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\md.cp312-win_amd64.pyd first seen with mtime 1709749300.9636705
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\argparse.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\uploadhandler.py first seen with mtime 1709054708.53922
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1709054708.523262
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\oauth2\views.py first seen with mtime 1709749303.18029
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_version.py first seen with mtime 1709749299.2878225
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\__init__.py first seen with mtime 1709749302.82125
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\fields.py first seen with mtime 1709054707.0958922
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\formats.py first seen with mtime 1709054708.7696042
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py first seen with mtime 1709054708.7706006
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\messages.py first seen with mtime 1709054708.527252
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\oauth2\urls.py first seen with mtime 1709749303.1792927
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\base.py first seen with mtime 1709054708.5751235
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\parser.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\base.py first seen with mtime 1709054708.7546434
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\ast.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py first seen with mtime 1709749301.1716447
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\types.py first seen with mtime 1709749299.6498942
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\dh.py first seen with mtime 1709749302.1988282
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\contextlib.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\apps.py first seen with mtime 1709749302.9429255
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\_parseaddr.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\comparison.py first seen with mtime 1709054708.6479287
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\regex_helper.py first seen with mtime 1709054708.777582
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\__init__.py first seen with mtime 1710443145.650867
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\algorithms.py first seen with mtime 1709749299.6439202
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\version.py first seen with mtime 1709749300.9676826
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\_compression.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\padding.py first seen with mtime 1709749302.2018223
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\functions\mixins.py first seen with mtime 1709054708.649924
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py first seen with mtime 1709054706.6559358
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\tempfile.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\static.py first seen with mtime 1709054708.7895508
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\smartif.py first seen with mtime 1709054708.7356942
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1709054708.1051939
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\__init__.py first seen with mtime 1709054708.5471985
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\html\parser.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\decorators.py first seen with mtime 1709054706.2181065
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\certifi\core.py first seen with mtime 1709749301.1307588
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py first seen with mtime 1709054708.630975
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\__init__.py first seen with mtime 1709054708.5132892
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py first seen with mtime 1709054708.7307081
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\__init__.py first seen with mtime 1709054706.658928
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\base\provider.py first seen with mtime 1709749302.9848125
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\memory.py first seen with mtime 1709054708.5432093
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\urls.py first seen with mtime 1713574839.581854
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\utils.py first seen with mtime 1709054708.519273
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\templates.py first seen with mtime 1709054708.529246
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\hooks.py first seen with mtime 1709749301.1696506
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\socketserver.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\_encoded_words.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\forms.py first seen with mtime 1709054706.9013836
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\base.py first seen with mtime 1709054708.6259875
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_bz2.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\dates.py first seen with mtime 1709054708.7965312
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\reprlib.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\tokens.py first seen with mtime 1709054705.4810586
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\core\__init__.py first seen with mtime 1709749302.851171
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\__init__.py first seen with mtime 1709054708.7436733
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\gzip.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\re\_constants.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\csrf.py first seen with mtime 1709054708.7875562
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\exceptions.py first seen with mtime 1709749302.1270204
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\urllib\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\models.py first seen with mtime 1709054707.097887
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\__init__.py first seen with mtime 1709054708.726719
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py first seen with mtime 1709749299.2888196
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\lzma.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\policy.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\apps.py first seen with mtime 1709054708.351721
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list_proj\__init__.py first seen with mtime 1710443131.9342856
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\shortcuts.py first seen with mtime 1709054708.35571
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\__about__.py first seen with mtime 1709749302.1260228
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py first seen with mtime 1709054708.7376895
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\storage\mixins.py first seen with mtime 1709054708.5432093
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\decimal.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\exceptions.py first seen with mtime 1709054706.2191038
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\base\mixins.py first seen with mtime 1709749302.9838154
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\views.py first seen with mtime 1709749302.8322208
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\core\context.py first seen with mtime 1709749302.851171
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\checks.py first seen with mtime 1709054706.2171085
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\socket.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\templatetags\__init__.py first seen with mtime 1709749302.8382046
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\cache.py first seen with mtime 1709054708.7616255
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\constant_time.py first seen with mtime 1709749302.194839
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\http.py first seen with mtime 1709054708.7725952
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\core\exceptions.py first seen with mtime 1709749302.8521674
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\graph.py first seen with mtime 1709054708.6190062
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\generated.py first seen with mtime 1709054708.6419456
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\filters.py first seen with mtime 1709054706.2191038
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\utils.py first seen with mtime 1709749302.8312235
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templatetags\__init__.py first seen with mtime 1709749303.4246366
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlparse\keywords.py first seen with mtime 1709054705.4780686
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\urls.py first seen with mtime 1709749302.9479115
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\templatetags\admin_urls.py first seen with mtime 1709054706.6569612
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\uuid.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\exceptions.py first seen with mtime 1709749299.289817
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\protocols.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\timeout.py first seen with mtime 1709749299.3077695
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\models.py first seen with mtime 1709749302.8182614
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\core\ratelimit.py first seen with mtime 1709749302.8521674
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\_oid.py first seen with mtime 1709749302.1310098
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\timesince.py first seen with mtime 1709054708.7795773
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\defaults.py first seen with mtime 1709054708.7885528
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_match_hostname.py first seen with mtime 1709749299.3057742
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\ctypes\wintypes.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\constant.py first seen with mtime 1709749300.9616761
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\sqlite3\dbapi2.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\cache\backends\filebased.py first seen with mtime 1709054708.522265
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\checks.py first seen with mtime 1709054708.5043135
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\exceptions.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\format_helpers.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__init__.py first seen with mtime 1709749301.163666
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\utils.py first seen with mtime 1709054706.2240908
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\security\sessions.py first seen with mtime 1709054708.5342326
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\constraints.py first seen with mtime 1709054708.6319716
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\templatetags\i18n.py first seen with mtime 1709054708.7456672
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_queue.pyd first seen with mtime 1707275450.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\mime\message.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\providers\google\__init__.py first seen with mtime 1709749303.111474
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\ciphers\modes.py first seen with mtime 1709749302.2078042
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py first seen with mtime 1709749299.292809
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\__init__.py first seen with mtime 1709054708.1041968
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\jwt\__init__.py first seen with mtime 1709749299.6429129
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\wait.py first seen with mtime 1709749299.3097637
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list_proj\settings.py first seen with mtime 1715270694.0004168
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\duration.py first seen with mtime 1709054708.767609
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\secrets.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\apps.py first seen with mtime 1709054706.2161112
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\views.py first seen with mtime 1709054707.0988863
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_overlapped.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py first seen with mtime 1709054708.5462008
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\abc.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\__init__.py first seen with mtime 1709749300.9586837
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py first seen with mtime 1709054708.7416785
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_asyncio.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\DLLs\_sqlite3.pyd first seen with mtime 1707275452.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\base\introspection.py first seen with mtime 1709054708.5870912
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\asymmetric\rsa.py first seen with mtime 1709749302.202818
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\general_name.py first seen with mtime 1709749302.2207696
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\forms.py first seen with mtime 1709749302.8262372
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\ssl.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\views.py first seen with mtime 1709749302.9479115
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\message.py first seen with mtime 1709054708.5481954
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\weakref.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1709054706.5312684
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\list.py first seen with mtime 1709054708.7985258
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\wsgiref\handlers.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\apps.py first seen with mtime 1709054706.8953998
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py first seen with mtime 1709054708.734697
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\operations\fields.py first seen with mtime 1709054708.6269848
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\enums.py first seen with mtime 1709054708.632969
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\__init__.py first seen with mtime 1709054708.617012
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\fields.py first seen with mtime 1709054708.6608949
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py first seen with mtime 1709749299.289817
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\hazmat\primitives\ciphers\base.py first seen with mtime 1709749302.2078042
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_.py first seen with mtime 1709749299.3057742
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\calendar.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\message.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\graphlib.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\__init__.py first seen with mtime 1709054708.7406807
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\__init__.py first seen with mtime 1709054706.2141166
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\contextvars.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\admin.py first seen with mtime 1709749302.8232446
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\migrations\loader.py first seen with mtime 1709054708.6200035
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\statistics.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_itertools.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\stringprep.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\cache.py first seen with mtime 1709054708.7217324
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\__init__.py first seen with mtime 1709054708.7955344
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\email\contentmanager.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\files\utils.py first seen with mtime 1709054708.53922
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\aggregates.py first seen with mtime 1709054708.6299767
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\checks\urls.py first seen with mtime 1709054708.5302432
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\asyncio\locks.py first seen with mtime 1707275418.0
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\ddl_references.py first seen with mtime 1709054708.582105
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\forms\__init__.py first seen with mtime 1709054708.6588993
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\staticfiles\handlers.py first seen with mtime 1709054708.5053103
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\cryptography\x509\certificate_transparency.py first seen with mtime 1709749302.2197723
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\templates\home.html first seen with mtime 1714319153.1265552
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\templates\item_details.html first seen with mtime 1714319284.5416818
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\templates\list.html first seen with mtime 1714161586.9063227
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\templates\lists_index.html first seen with mtime 1714150999.4287972
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account first seen with mtime 1709749303.3817515
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth first seen with mtime 1709749303.3917246
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa first seen with mtime 1709749303.4046898
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\openid first seen with mtime 1709749303.407682
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount first seen with mtime 1709749303.41965
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\tests first seen with mtime 1709749303.4216447
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\usersessions first seen with mtime 1709749303.4236398
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\account_inactive.html first seen with mtime 1709749303.347842
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\base_entrance.html first seen with mtime 1709749303.3488393
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\base_manage.html first seen with mtime 1709749303.3488393
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\base_manage_email.html first seen with mtime 1709749303.3498366
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\base_manage_password.html first seen with mtime 1709749303.3498366
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\base_reauthenticate.html first seen with mtime 1709749303.3508346
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email first seen with mtime 1709749303.37477
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email.html first seen with mtime 1709749303.3518314
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email_change.html first seen with mtime 1709749303.3518314
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email_confirm.html first seen with mtime 1709749303.352829
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\login.html first seen with mtime 1709749303.352829
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\logout.html first seen with mtime 1709749303.3538263
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages first seen with mtime 1709749303.380754
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\password_change.html first seen with mtime 1709749303.3548236
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\password_reset.html first seen with mtime 1709749303.3548236
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\password_reset_done.html first seen with mtime 1709749303.3558207
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\password_reset_from_key.html first seen with mtime 1709749303.3558207
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\password_reset_from_key_done.html first seen with mtime 1709749303.356818
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\password_set.html first seen with mtime 1709749303.356818
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\reauthenticate.html first seen with mtime 1709749303.3578153
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\signup.html first seen with mtime 1709749303.3588128
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\signup_closed.html first seen with mtime 1709749303.3588128
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\snippets first seen with mtime 1709749303.3827486
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\verification_sent.html first seen with mtime 1709749303.35981
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\verified_email_required.html first seen with mtime 1709749303.35981
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements first seen with mtime 1709749303.3907278
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\layouts first seen with mtime 1709749303.392722
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\authenticate.html first seen with mtime 1709749303.3937192
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\base_entrance.html first seen with mtime 1709749303.3947165
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\base_manage.html first seen with mtime 1709749303.3947165
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\email first seen with mtime 1709749303.3997035
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\index.html first seen with mtime 1709749303.395714
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\messages first seen with mtime 1709749303.4016979
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\reauthenticate.html first seen with mtime 1709749303.395714
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\recovery_codes first seen with mtime 1709749303.4046898
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\totp first seen with mtime 1709749303.4066844
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\openid\base.html first seen with mtime 1709749303.407682
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\openid\login.html first seen with mtime 1709749303.407682
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\authentication_error.html first seen with mtime 1709749303.408679
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\base_entrance.html first seen with mtime 1709749303.4096766
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\base_manage.html first seen with mtime 1709749303.4096766
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\connections.html first seen with mtime 1709749303.410674
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\email first seen with mtime 1709749303.4156613
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\login.html first seen with mtime 1709749303.410674
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\login_cancelled.html first seen with mtime 1709749303.4116719
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\messages first seen with mtime 1709749303.4186525
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\signup.html first seen with mtime 1709749303.4126687
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\snippets first seen with mtime 1709749303.4216447
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\tests\test_403_csrf.html first seen with mtime 1709749303.4226422
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\usersessions\base_manage.html first seen with mtime 1709749303.4226422
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\usersessions\messages first seen with mtime 1709749303.4246366
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\usersessions\usersession_list.html first seen with mtime 1709749303.4236398
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\account_already_exists_message.txt first seen with mtime 1709749303.3608074
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\account_already_exists_subject.txt first seen with mtime 1709749303.3618045
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\base_message.txt first seen with mtime 1709749303.3618045
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\base_notification.txt first seen with mtime 1709749303.3628032
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_changed_message.txt first seen with mtime 1709749303.3637996
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_changed_subject.txt first seen with mtime 1709749303.3637996
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_confirmation_message.txt first seen with mtime 1709749303.3657947
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_confirmation_signup_message.txt first seen with mtime 1709749303.3667915
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_confirmation_signup_subject.txt first seen with mtime 1709749303.3667915
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_confirmation_subject.txt first seen with mtime 1709749303.3677886
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_confirm_message.txt first seen with mtime 1709749303.3647966
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_confirm_subject.txt first seen with mtime 1709749303.3647966
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_deleted_message.txt first seen with mtime 1709749303.3677886
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\email_deleted_subject.txt first seen with mtime 1709749303.368786
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_changed_message.txt first seen with mtime 1709749303.368786
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_changed_subject.txt first seen with mtime 1709749303.3697834
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_reset_key_message.txt first seen with mtime 1709749303.3707805
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_reset_key_subject.txt first seen with mtime 1709749303.3707805
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_reset_message.txt first seen with mtime 1709749303.3717782
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_reset_subject.txt first seen with mtime 1709749303.3717782
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_set_message.txt first seen with mtime 1709749303.372776
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\password_set_subject.txt first seen with mtime 1709749303.3737726
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\unknown_account_message.txt first seen with mtime 1709749303.3737726
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\email\unknown_account_subject.txt first seen with mtime 1709749303.37477
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\cannot_delete_primary_email.txt first seen with mtime 1709749303.37477
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\email_confirmation_failed.txt first seen with mtime 1709749303.3757677
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\email_confirmation_sent.txt first seen with mtime 1709749303.376766
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\email_confirmed.txt first seen with mtime 1709749303.3777626
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\email_deleted.txt first seen with mtime 1709749303.3777626
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\logged_in.txt first seen with mtime 1709749303.3787596
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\logged_out.txt first seen with mtime 1709749303.3787596
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\password_changed.txt first seen with mtime 1709749303.3797567
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\password_set.txt first seen with mtime 1709749303.3797567
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\primary_email_set.txt first seen with mtime 1709749303.380754
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\messages\unverified_primary_email.txt first seen with mtime 1709749303.3817515
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\snippets\already_logged_in.html first seen with mtime 1709749303.3817515
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\account\snippets\warn_no_email.html first seen with mtime 1709749303.3827486
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\alert.html first seen with mtime 1709749303.383746
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\badge.html first seen with mtime 1709749303.3847437
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\button.html first seen with mtime 1709749303.3847437
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\field.html first seen with mtime 1709749303.385741
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\fields.html first seen with mtime 1709749303.385741
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\form.html first seen with mtime 1709749303.386738
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\h1.html first seen with mtime 1709749303.386738
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\h2.html first seen with mtime 1709749303.3877356
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\hr.html first seen with mtime 1709749303.3887327
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\img.html first seen with mtime 1709749303.3887327
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\panel.html first seen with mtime 1709749303.38973
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\provider.html first seen with mtime 1709749303.38973
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\provider_list.html first seen with mtime 1709749303.3907278
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\elements\table.html first seen with mtime 1709749303.3907278
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\layouts\base.html first seen with mtime 1709749303.3917246
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\layouts\entrance.html first seen with mtime 1709749303.392722
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\allauth\layouts\manage.html first seen with mtime 1709749303.392722
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\email\recovery_codes_generated_message.txt first seen with mtime 1709749303.3967113
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\email\recovery_codes_generated_subject.txt first seen with mtime 1709749303.3977084
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\email\totp_activated_message.txt first seen with mtime 1709749303.3977084
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\email\totp_activated_subject.txt first seen with mtime 1709749303.3987062
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\email\totp_deactivated_message.txt first seen with mtime 1709749303.3987062
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\email\totp_deactivated_subject.txt first seen with mtime 1709749303.3997035
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\messages\recovery_codes_generated.txt first seen with mtime 1709749303.4007008
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\messages\totp_activated.txt first seen with mtime 1709749303.4007008
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\messages\totp_deactivated.txt first seen with mtime 1709749303.4016979
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\recovery_codes\base.html first seen with mtime 1709749303.4026954
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\recovery_codes\download.txt first seen with mtime 1709749303.4026954
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\recovery_codes\generate.html first seen with mtime 1709749303.4036932
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\recovery_codes\index.html first seen with mtime 1709749303.4046898
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\totp\activate_form.html first seen with mtime 1709749303.4056883
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\totp\base.html first seen with mtime 1709749303.4056883
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\mfa\totp\deactivate_form.html first seen with mtime 1709749303.4066844
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\email\account_connected_message.txt first seen with mtime 1709749303.4126687
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\email\account_connected_subject.txt first seen with mtime 1709749303.4136662
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\email\account_disconnected_message.txt first seen with mtime 1709749303.4146638
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\email\account_disconnected_subject.txt first seen with mtime 1709749303.4156613
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\messages\account_connected.txt first seen with mtime 1709749303.4166584
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\messages\account_connected_other.txt first seen with mtime 1709749303.4176555
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\messages\account_connected_updated.txt first seen with mtime 1709749303.4186525
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\messages\account_disconnected.txt first seen with mtime 1709749303.4186525
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\snippets\login.html first seen with mtime 1709749303.41965
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\snippets\login_extra.html first seen with mtime 1709749303.4206471
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\socialaccount\snippets\provider_list.html first seen with mtime 1709749303.4216447
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\templates\usersessions\messages\sessions_logged_out.txt first seen with mtime 1709749303.4246366
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ar\LC_MESSAGES\django.mo first seen with mtime 1709749302.856158
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\az\LC_MESSAGES\django.mo first seen with mtime 1709749302.8571787
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\bg\LC_MESSAGES\django.mo first seen with mtime 1709749302.8591487
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ca\LC_MESSAGES\django.mo first seen with mtime 1709749302.8611445
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\cs\LC_MESSAGES\django.mo first seen with mtime 1709749302.8631387
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\da\LC_MESSAGES\django.mo first seen with mtime 1709749302.8641355
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\de\LC_MESSAGES\django.mo first seen with mtime 1709749302.8661306
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\el\LC_MESSAGES\django.mo first seen with mtime 1709749302.8681247
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\en\LC_MESSAGES\django.mo first seen with mtime 1709749302.8691225
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\es\LC_MESSAGES\django.mo first seen with mtime 1709749302.8711166
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\eu\LC_MESSAGES\django.mo first seen with mtime 1709749302.8731117
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\fa\LC_MESSAGES\django.mo first seen with mtime 1709749302.8741088
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\fi\LC_MESSAGES\django.mo first seen with mtime 1709749302.8761032
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\fr\LC_MESSAGES\django.mo first seen with mtime 1709749302.878098
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\he\LC_MESSAGES\django.mo first seen with mtime 1709749302.8790956
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\hr\LC_MESSAGES\django.mo first seen with mtime 1709749302.8810902
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\hu\LC_MESSAGES\django.mo first seen with mtime 1709749302.883085
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\id\LC_MESSAGES\django.mo first seen with mtime 1709749302.8840823
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\it\LC_MESSAGES\django.mo first seen with mtime 1709749302.8860767
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ja\LC_MESSAGES\django.mo first seen with mtime 1709749302.8880718
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ka\LC_MESSAGES\django.mo first seen with mtime 1709749302.8900661
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ko\LC_MESSAGES\django.mo first seen with mtime 1709749302.8910635
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ky\LC_MESSAGES\django.mo first seen with mtime 1709749302.893058
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\lt\LC_MESSAGES\django.mo first seen with mtime 1709749302.8940556
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\lv\LC_MESSAGES\django.mo first seen with mtime 1709749302.8960502
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\mn\LC_MESSAGES\django.mo first seen with mtime 1709749302.898045
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\nb\LC_MESSAGES\django.mo first seen with mtime 1709749302.8990426
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\nl\LC_MESSAGES\django.mo first seen with mtime 1709749302.9010372
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\pl\LC_MESSAGES\django.mo first seen with mtime 1709749302.903031
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\pt_BR\LC_MESSAGES\django.mo first seen with mtime 1709749302.9040291
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\pt_PT\LC_MESSAGES\django.mo first seen with mtime 1709749302.9060235
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ro\LC_MESSAGES\django.mo first seen with mtime 1709749302.9080184
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\ru\LC_MESSAGES\django.mo first seen with mtime 1709749302.9090154
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\sk\LC_MESSAGES\django.mo first seen with mtime 1709749302.9110098
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\sl\LC_MESSAGES\django.mo first seen with mtime 1709749302.9130054
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\sr\LC_MESSAGES\django.mo first seen with mtime 1709749302.914003
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\sr_Latn\LC_MESSAGES\django.mo first seen with mtime 1709749302.9159968
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\sv\LC_MESSAGES\django.mo first seen with mtime 1709749302.9179916
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\th\LC_MESSAGES\django.mo first seen with mtime 1709749302.9189887
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\tr\LC_MESSAGES\django.mo first seen with mtime 1709749302.9209836
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\uk\LC_MESSAGES\django.mo first seen with mtime 1709749302.921981
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\zh_CN\LC_MESSAGES\django.mo first seen with mtime 1709749302.9239755
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\zh_Hans\LC_MESSAGES\django.mo first seen with mtime 1709749302.9249725
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\zh_Hant\LC_MESSAGES\django.mo first seen with mtime 1709749302.9269683
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\locale\zh_TW\LC_MESSAGES\django.mo first seen with mtime 1709749302.927965
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1709054707.08891
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1709054707.248484
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1709054707.08988
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1709054707.0839238
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1709054707.0848935
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\migrations\__init__.py first seen with mtime 1709749302.8372073
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1709054707.08891
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1709054707.0908773
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\migrations\0001_initial.py first seen with mtime 1709749302.8342166
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\migrations\0001_initial.py first seen with mtime 1711058276.3953197
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\migrations\0004_alter_emailaddress_drop_unique_email.py first seen with mtime 1709749302.8362105
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1709054707.0878842
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\migrations\0002_alter_list_user_id_delete_user.py first seen with mtime 1713462685.9911351
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\migrations\__init__.py first seen with mtime 1709749302.9539201
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\migrations\0003_alter_emailaddress_create_unique_verified_email.py first seen with mtime 1709749302.8362105
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\migrations\0003_extra_data_default_dict.py first seen with mtime 1709749302.950929
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1709054707.0858903
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\migrations\0005_socialtoken_nullable_app.py first seen with mtime 1709749302.9528985
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1709054708.652916
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1709054708.7227294
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\migrations\__init__.py first seen with mtime 1709054708.5023186
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\middleware.py first seen with mtime 1709749302.827234
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1709054707.0839238
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1709054707.0858903
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\migrations\0002_token_max_lengths.py first seen with mtime 1709749302.950929
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1709054708.346734
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\migrations\0006_alter_socialaccount_extra_data.py first seen with mtime 1709749302.9528985
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\migrations\0001_initial.py first seen with mtime 1709749302.949916
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1709054707.0878842
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list\migrations\__init__.py first seen with mtime 1710443145.6528747
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1709054706.5302718
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1709054706.5302718
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1709054707.248484
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1709054707.2494533
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\socialaccount\migrations\0004_app_provider_id_settings.py first seen with mtime 1709749302.9519007
+File C:\Users\ralph\Documents\PyCharm\todo_list_proj\todo_list_proj\wsgi.py first seen with mtime 1710443131.9342856
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1709054708.1101804
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\migrations\0001_initial.py first seen with mtime 1709054708.5013208
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\migrations\0002_email_max_length.py first seen with mtime 1709749302.8352418
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sites\migrations\0002_alter_domain_unique.py first seen with mtime 1709054708.5023186
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1709054708.346734
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1709054706.5292737
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1709054707.08988
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\allauth\account\migrations\0005_emailaddress_idx_upper_email.py first seen with mtime 1709749302.8372073
+File C:\Users\ralph\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1709054707.086887
+CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
+CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
+CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
+CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
+CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
+CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
+CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
+CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
+CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
+CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
+CREATE TABLE "account_emailaddress" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "email" varchar(75) NOT NULL UNIQUE, "verified" bool NOT NULL, "primary" bool NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE TABLE "account_emailconfirmation" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "created" datetime NOT NULL, "sent" datetime NULL, "key" varchar(64) NOT NULL UNIQUE, "email_address_id" integer NOT NULL REFERENCES "account_emailaddress" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE INDEX "account_emailaddress_user_id_2c513194" ON "account_emailaddress" ("user_id"); (params ())
+CREATE INDEX "account_emailconfirmation_email_address_id_5b7f8c58" ON "account_emailconfirmation" ("email_address_id"); (params ())
+CREATE TABLE "new__account_emailaddress" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "verified" bool NOT NULL, "primary" bool NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "email" varchar(254) NOT NULL UNIQUE); (params None)
+INSERT INTO "new__account_emailaddress" ("id", "verified", "primary", "user_id", "email") SELECT "id", "verified", "primary", "user_id", "email" FROM "account_emailaddress"; (params ())
+DROP TABLE "account_emailaddress"; (params ())
+ALTER TABLE "new__account_emailaddress" RENAME TO "account_emailaddress"; (params ())
+CREATE INDEX "account_emailaddress_user_id_2c513194" ON "account_emailaddress" ("user_id"); (params ())
+CREATE UNIQUE INDEX "account_emailaddress_user_id_email_987c8728_uniq" ON "account_emailaddress" ("user_id", "email"); (params ())
+CREATE UNIQUE INDEX "unique_verified_email" ON "account_emailaddress" ("email") WHERE "verified"; (params None)
+CREATE TABLE "new__account_emailaddress" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "verified" bool NOT NULL, "primary" bool NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "email" varchar(254) NOT NULL); (params None)
+INSERT INTO "new__account_emailaddress" ("id", "verified", "primary", "user_id", "email") SELECT "id", "verified", "primary", "user_id", "email" FROM "account_emailaddress"; (params ())
+DROP TABLE "account_emailaddress"; (params ())
+ALTER TABLE "new__account_emailaddress" RENAME TO "account_emailaddress"; (params ())
+CREATE UNIQUE INDEX "account_emailaddress_user_id_email_987c8728_uniq" ON "account_emailaddress" ("user_id", "email"); (params ())
+CREATE UNIQUE INDEX "unique_verified_email" ON "account_emailaddress" ("email") WHERE "verified"; (params ())
+CREATE INDEX "account_emailaddress_user_id_2c513194" ON "account_emailaddress" ("user_id"); (params ())
+CREATE INDEX "account_emailaddress_upper" ON "account_emailaddress" ((UPPER("email"))); (params None)
+CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
+INSERT INTO "new__django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log"; (params ())
+DROP TABLE "django_admin_log"; (params ())
+ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; (params ())
+CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+INSERT INTO "new__django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type"; (params ())
+DROP TABLE "django_content_type"; (params ())
+ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; (params ())
+CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+ALTER TABLE "django_content_type" DROP COLUMN "name"; (params ())
+CREATE TABLE "new__auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
+INSERT INTO "new__auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission"; (params ())
+DROP TABLE "auth_permission"; (params ())
+ALTER TABLE "new__auth_permission" RENAME TO "auth_permission"; (params ())
+CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
+INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user"; (params ())
+DROP TABLE "auth_user"; (params ())
+ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
+INSERT INTO "new__auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user"; (params ())
+DROP TABLE "auth_user"; (params ())
+ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
+INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; (params ())
+DROP TABLE "auth_user"; (params ())
+ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
+INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user"; (params ())
+DROP TABLE "auth_user"; (params ())
+ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+CREATE TABLE "new__auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(150) NOT NULL UNIQUE); (params None)
+INSERT INTO "new__auth_group" ("id", "name") SELECT "id", "name" FROM "auth_group"; (params ())
+DROP TABLE "auth_group"; (params ())
+ALTER TABLE "new__auth_group" RENAME TO "auth_group"; (params ())
+CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "last_name" varchar(150) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "first_name" varchar(150) NOT NULL); (params None)
+INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "last_name", "email", "is_staff", "is_active", "date_joined", "first_name") SELECT "id", "password", "last_login", "is_superuser", "username", "last_name", "email", "is_staff", "is_active", "date_joined", "first_name" FROM "auth_user"; (params ())
+DROP TABLE "auth_user"; (params ())
+ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+CREATE TABLE "django_site" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "domain" varchar(100) NOT NULL, "name" varchar(50) NOT NULL); (params None)
+CREATE TABLE "new__django_site" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "domain" varchar(100) NOT NULL UNIQUE); (params None)
+INSERT INTO "new__django_site" ("id", "name", "domain") SELECT "id", "name", "domain" FROM "django_site"; (params ())
+DROP TABLE "django_site"; (params ())
+ALTER TABLE "new__django_site" RENAME TO "django_site"; (params ())
+CREATE TABLE "socialaccount_socialaccount" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(30) NOT NULL, "uid" varchar(191) NOT NULL, "last_login" datetime NOT NULL, "date_joined" datetime NOT NULL, "extra_data" text NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE TABLE "socialaccount_socialapp" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(30) NOT NULL, "name" varchar(40) NOT NULL, "client_id" varchar(100) NOT NULL, "secret" varchar(100) NOT NULL, "key" varchar(100) NOT NULL); (params None)
+CREATE TABLE "socialaccount_socialapp_sites" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "socialapp_id" integer NOT NULL REFERENCES "socialaccount_socialapp" ("id") DEFERRABLE INITIALLY DEFERRED, "site_id" integer NOT NULL REFERENCES "django_site" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE TABLE "socialaccount_socialtoken" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "token" text NOT NULL, "token_secret" text NOT NULL, "expires_at" datetime NULL, "account_id" integer NOT NULL REFERENCES "socialaccount_socialaccount" ("id") DEFERRABLE INITIALLY DEFERRED, "app_id" integer NOT NULL REFERENCES "socialaccount_socialapp" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE UNIQUE INDEX "socialaccount_socialtoken_app_id_account_id_fca4e0ac_uniq" ON "socialaccount_socialtoken" ("app_id", "account_id"); (params ())
+CREATE UNIQUE INDEX "socialaccount_socialaccount_provider_uid_fc810c6e_uniq" ON "socialaccount_socialaccount" ("provider", "uid"); (params ())
+CREATE INDEX "socialaccount_socialaccount_user_id_8146e70c" ON "socialaccount_socialaccount" ("user_id"); (params ())
+CREATE UNIQUE INDEX "socialaccount_socialapp_sites_socialapp_id_site_id_71a9a768_uniq" ON "socialaccount_socialapp_sites" ("socialapp_id", "site_id"); (params ())
+CREATE INDEX "socialaccount_socialapp_sites_socialapp_id_97fb6e7d" ON "socialaccount_socialapp_sites" ("socialapp_id"); (params ())
+CREATE INDEX "socialaccount_socialapp_sites_site_id_2579dee5" ON "socialaccount_socialapp_sites" ("site_id"); (params ())
+CREATE INDEX "socialaccount_socialtoken_account_id_951f210e" ON "socialaccount_socialtoken" ("account_id"); (params ())
+CREATE INDEX "socialaccount_socialtoken_app_id_636a42d7" ON "socialaccount_socialtoken" ("app_id"); (params ())
+CREATE TABLE "new__socialaccount_socialapp" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(30) NOT NULL, "name" varchar(40) NOT NULL, "secret" varchar(100) NOT NULL, "key" varchar(100) NOT NULL, "client_id" varchar(191) NOT NULL); (params None)
+INSERT INTO "new__socialaccount_socialapp" ("id", "provider", "name", "secret", "key", "client_id") SELECT "id", "provider", "name", "secret", "key", "client_id" FROM "socialaccount_socialapp"; (params ())
+DROP TABLE "socialaccount_socialapp"; (params ())
+ALTER TABLE "new__socialaccount_socialapp" RENAME TO "socialaccount_socialapp"; (params ())
+CREATE TABLE "new__socialaccount_socialapp" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(30) NOT NULL, "name" varchar(40) NOT NULL, "client_id" varchar(191) NOT NULL, "secret" varchar(100) NOT NULL, "key" varchar(191) NOT NULL); (params None)
+INSERT INTO "new__socialaccount_socialapp" ("id", "provider", "name", "client_id", "secret", "key") SELECT "id", "provider", "name", "client_id", "secret", "key" FROM "socialaccount_socialapp"; (params ())
+DROP TABLE "socialaccount_socialapp"; (params ())
+ALTER TABLE "new__socialaccount_socialapp" RENAME TO "socialaccount_socialapp"; (params ())
+CREATE TABLE "new__socialaccount_socialapp" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(30) NOT NULL, "name" varchar(40) NOT NULL, "client_id" varchar(191) NOT NULL, "key" varchar(191) NOT NULL, "secret" varchar(191) NOT NULL); (params None)
+INSERT INTO "new__socialaccount_socialapp" ("id", "provider", "name", "client_id", "key", "secret") SELECT "id", "provider", "name", "client_id", "key", "secret" FROM "socialaccount_socialapp"; (params ())
+DROP TABLE "socialaccount_socialapp"; (params ())
+ALTER TABLE "new__socialaccount_socialapp" RENAME TO "socialaccount_socialapp"; (params ())
+CREATE TABLE "new__socialaccount_socialapp" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(30) NOT NULL, "name" varchar(40) NOT NULL, "client_id" varchar(191) NOT NULL, "secret" varchar(191) NOT NULL, "key" varchar(191) NOT NULL, "provider_id" varchar(200) NOT NULL); (params None)
+INSERT INTO "new__socialaccount_socialapp" ("id", "provider", "name", "client_id", "secret", "key", "provider_id") SELECT "id", "provider", "name", "client_id", "secret", "key", '' FROM "socialaccount_socialapp"; (params ())
+DROP TABLE "socialaccount_socialapp"; (params ())
+ALTER TABLE "new__socialaccount_socialapp" RENAME TO "socialaccount_socialapp"; (params ())
+CREATE TABLE "new__socialaccount_socialapp" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(30) NOT NULL, "name" varchar(40) NOT NULL, "client_id" varchar(191) NOT NULL, "secret" varchar(191) NOT NULL, "key" varchar(191) NOT NULL, "provider_id" varchar(200) NOT NULL, "settings" text NOT NULL CHECK ((JSON_VALID("settings") OR "settings" IS NULL))); (params None)
+INSERT INTO "new__socialaccount_socialapp" ("id", "provider", "name", "client_id", "secret", "key", "provider_id", "settings") SELECT "id", "provider", "name", "client_id", "secret", "key", "provider_id", '{}' FROM "socialaccount_socialapp"; (params ())
+DROP TABLE "socialaccount_socialapp"; (params ())
+ALTER TABLE "new__socialaccount_socialapp" RENAME TO "socialaccount_socialapp"; (params ())
+CREATE TABLE "new__socialaccount_socialaccount" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "uid" varchar(191) NOT NULL, "last_login" datetime NOT NULL, "date_joined" datetime NOT NULL, "extra_data" text NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "provider" varchar(200) NOT NULL); (params None)
+INSERT INTO "new__socialaccount_socialaccount" ("id", "uid", "last_login", "date_joined", "extra_data", "user_id", "provider") SELECT "id", "uid", "last_login", "date_joined", "extra_data", "user_id", "provider" FROM "socialaccount_socialaccount"; (params ())
+DROP TABLE "socialaccount_socialaccount"; (params ())
+ALTER TABLE "new__socialaccount_socialaccount" RENAME TO "socialaccount_socialaccount"; (params ())
+CREATE UNIQUE INDEX "socialaccount_socialaccount_provider_uid_fc810c6e_uniq" ON "socialaccount_socialaccount" ("provider", "uid"); (params ())
+CREATE INDEX "socialaccount_socialaccount_user_id_8146e70c" ON "socialaccount_socialaccount" ("user_id"); (params ())
+CREATE TABLE "new__socialaccount_socialtoken" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "token" text NOT NULL, "token_secret" text NOT NULL, "expires_at" datetime NULL, "account_id" integer NOT NULL REFERENCES "socialaccount_socialaccount" ("id") DEFERRABLE INITIALLY DEFERRED, "app_id" integer NULL REFERENCES "socialaccount_socialapp" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+INSERT INTO "new__socialaccount_socialtoken" ("id", "token", "token_secret", "expires_at", "account_id", "app_id") SELECT "id", "token", "token_secret", "expires_at", "account_id", "app_id" FROM "socialaccount_socialtoken"; (params ())
+DROP TABLE "socialaccount_socialtoken"; (params ())
+ALTER TABLE "new__socialaccount_socialtoken" RENAME TO "socialaccount_socialtoken"; (params ())
+CREATE UNIQUE INDEX "socialaccount_socialtoken_app_id_account_id_fca4e0ac_uniq" ON "socialaccount_socialtoken" ("app_id", "account_id"); (params ())
+CREATE INDEX "socialaccount_socialtoken_account_id_951f210e" ON "socialaccount_socialtoken" ("account_id"); (params ())
+CREATE INDEX "socialaccount_socialtoken_app_id_636a42d7" ON "socialaccount_socialtoken" ("app_id"); (params ())
+CREATE TABLE "new__socialaccount_socialaccount" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "provider" varchar(200) NOT NULL, "uid" varchar(191) NOT NULL, "last_login" datetime NOT NULL, "date_joined" datetime NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "extra_data" text NOT NULL CHECK ((JSON_VALID("extra_data") OR "extra_data" IS NULL))); (params None)
+INSERT INTO "new__socialaccount_socialaccount" ("id", "provider", "uid", "last_login", "date_joined", "user_id", "extra_data") SELECT "id", "provider", "uid", "last_login", "date_joined", "user_id", "extra_data" FROM "socialaccount_socialaccount"; (params ())
+DROP TABLE "socialaccount_socialaccount"; (params ())
+ALTER TABLE "new__socialaccount_socialaccount" RENAME TO "socialaccount_socialaccount"; (params ())
+CREATE UNIQUE INDEX "socialaccount_socialaccount_provider_uid_fc810c6e_uniq" ON "socialaccount_socialaccount" ("provider", "uid"); (params ())
+CREATE INDEX "socialaccount_socialaccount_user_id_8146e70c" ON "socialaccount_socialaccount" ("user_id"); (params ())
+CREATE TABLE "todo_list_list" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "list_name" varchar(200) NOT NULL); (params None)
+CREATE TABLE "todo_list_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_name" varchar(200) NOT NULL); (params None)
+CREATE TABLE "todo_list_item" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "item_date_added" datetime NOT NULL, "item_descr" varchar(200) NOT NULL, "item_done" bool NOT NULL, "list_id_id" bigint NOT NULL REFERENCES "todo_list_list" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+CREATE TABLE "new__todo_list_list" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "list_name" varchar(200) NOT NULL, "user_id_id" bigint NOT NULL REFERENCES "todo_list_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+INSERT INTO "new__todo_list_list" ("id", "list_name", "user_id_id") SELECT "id", "list_name", NULL FROM "todo_list_list"; (params ())
+DROP TABLE "todo_list_list"; (params ())
+ALTER TABLE "new__todo_list_list" RENAME TO "todo_list_list"; (params ())
+CREATE INDEX "todo_list_item_list_id_id_971a2f0b" ON "todo_list_item" ("list_id_id"); (params ())
+CREATE INDEX "todo_list_list_user_id_id_513f016a" ON "todo_list_list" ("user_id_id"); (params ())
+CREATE TABLE "new__todo_list_list" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "list_name" varchar(200) NOT NULL, "user_id_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+INSERT INTO "new__todo_list_list" ("id", "list_name", "user_id_id") SELECT "id", "list_name", "user_id_id" FROM "todo_list_list"; (params ())
+DROP TABLE "todo_list_list"; (params ())
+ALTER TABLE "new__todo_list_list" RENAME TO "todo_list_list"; (params ())
+CREATE INDEX "todo_list_list_user_id_id_513f016a" ON "todo_list_list" ("user_id_id"); (params ())
+DROP TABLE "todo_list_user"; (params ())

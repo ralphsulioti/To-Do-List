@@ -10,15 +10,15 @@
 <body>
     {% load socialaccount %}
     <div class="container-fluid">
-        <h1><p class="text-success text-center">Google Login</p></h1>
+        <h1><p class="text-success text-center">To-Do List</p></h1>
 
         {% if user.is_authenticated %}
         <h3><p class="text-center">You are signed in as <u>{{user.email}}</u></p></h3>
-        <h4><p class="text-center"><a href="{% url 'logout_view' %}">Logout</a></p></h4>
+        <h4><p class="text-center"><a href="{% url 'logout_view' %}"><button>Logout</button></a></p></h4>
         {% else %}
-        <h4><p class="text-center"><a href="{% provider_login_url 'google' %}?next=/">Login</a></p></h4>
+        <h4><p class="text-center"><a href="{% provider_login_url 'google' %}?next=/"><button>Login</button></a></p></h4>
         {% endif %}
-        <h4><p class="text-center"><a href="lists_index">My Lists</a></p></h4>
+        <h4><p class="text-center"><a href="lists_index"><button>My Lists</button></a></p></h4>
     </div>
     <br><br><br><br><br><br><br><br><br><br>
     <figure class="text-center">

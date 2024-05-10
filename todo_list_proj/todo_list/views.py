@@ -4,6 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from .models import List, Item
 from django.contrib.auth.models import User
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def home(request):
@@ -38,7 +41,7 @@ def delete_item(request, item_id):
         item.delete()
     return redirect('list_view', list_id=item.list_id.id)
 
-@login_required
+
 def add_item(request, list_id):
     list_obj = get_object_or_404(List, pk=list_id)
     if request.method == 'POST':
