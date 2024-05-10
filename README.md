@@ -1,7 +1,7 @@
 # To-Do List
  
 Creating a to-do list web application that supports related functionality. Users are able to:
- 1) Sign in and support Google login
+ 1) Log in; can also login via Google
  2) Create, delete, and edit to-do lists
  3) Create, delete, and edit items that are associated with a to-do list
  4) Manage the items in each to-do list and mark them as complete
