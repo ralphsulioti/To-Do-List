@@ -36,7 +36,7 @@
                     <h3><p class="text-center"><del>{{ item.item_descr }}</del></p></h3>
                         <form action="{% url 'item_done' item.id %}" method="post" style="display: inline;">
                             {% csrf_token %}
-                            <button type="submit">Set Unfinished</button>
+                            <button type="submit">Not Done</button>
                         </form>
                     {% else %}
                     <h3><p class="text-center">{{ item.item_descr }}</p></h3>
@@ -54,7 +54,7 @@
             {% endfor %}
         </ul>
 
-        <a href="{% url 'lists_index' %}"> <button>Go Back</button></a>
+        <p class="text-center"><a href="{% url 'lists_index' %}"><button>Back</button></a></p>
     </div>
     <br><br>
     <figure class="text-center">

@@ -7,21 +7,23 @@
     <title>Item Details</title>
 </head>
 <body>
-    <h1><p class="text-success text-center">Item Details</p></h1>
-    <h3><p><strong>Description:</strong> {{ item.item_descr }}</p>
-    <p><strong>Date Added:</strong> {{ item.item_date_added }}</p>
-    <p><strong>Status:</strong> {% if item.item_done %}Done{% else %}Not Done{% endif %}</p>
-        <p><strong>List:</strong> {{ list_name }}</p><br><br><br></h3><h4>
-        <a href="{% url 'list_view' item.list_id.id %}">Back to List</a></h4>
-    <br><br>
+    <div class="container-fluid">
+        <h1><p class="text-success text-center">Item Details</p></h1>
+        <h3><p class="text-center"><strong>Description:</strong> {{ item.item_descr }}</p>
+        <p class="text-center"><strong>Date Added:</strong> {{ item.item_date_added }}</p>
+        <p class="text-center"><strong>Status:</strong> {% if item.item_done %}Done{% else %}Not Done{% endif %}</p>
+            <p class="text-center"><strong>List:</strong> {{ list_name }}</p><br><br><br></h3><h4>
+            <h4><p class="text-center"><a href="{% url 'list_view' item.list_id.id %}"><button>Back</button></a></p></h4>
+        <br><br>
 
-    <figure class="text-center">
-      <blockquote class="blockquote">
-          <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
-      </blockquote>
-      <h4><figcaption class="blockquote-footer"><p class="text-success">
-        -Antoine de Saint-Exupery
-      </p></figcaption></h4>
-    </figure>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+              <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
+          </blockquote>
+          <h4><figcaption class="blockquote-footer"><p class="text-success">
+            -Antoine de Saint-Exupery
+          </p></figcaption></h4>
+        </figure>
+    </div>
 </body>
 </html>
