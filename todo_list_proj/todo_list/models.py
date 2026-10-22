@@ -1,11 +1,11 @@
-import datetime
-from django.db import models
-from django.utils import timezone
 from django.contrib.auth.models import User
+from django.db import models
+
 
 class List(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     list_name = models.CharField(max_length=200)
+
 
 class Item(models.Model):
     list_id = models.ForeignKey(List, on_delete=models.CASCADE)
