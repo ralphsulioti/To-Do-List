@@ -1,10 +1,11 @@
 from django.conf import settings
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
-from django.utils import timezone
 from django.views.decorators.http import require_POST
 
+from .forms import ItemForm, ListForm
 from .models import Item, List
 
 
@@ -57,12 +58,13 @@ def delete_item(request: HttpRequest, item_id: int) -> HttpResponse:
 @require_POST
 def add_item(request: HttpRequest, list_id: int) -> HttpResponse:
     list_obj = get_user_list(request, list_id)
-    Item.objects.create(
-        list_id=list_obj,
-        item_descr=request.POST.get("item_descr"),
-        item_date_added=timezone.now(),
-        item_done=False,
-    )
+    form = ItemForm(request.POST)
+    if form.is_valid():
+        item: Item = form.save(commit=False)
+        item.list_id = list_obj
+        item.save()
+    else:
+        messages.error(request, form.errors["item_descr"][0])
     return redirect("list_view", list_id=list_obj.id)
 
 
@@ -96,7 +98,13 @@ def lists_index(request: HttpRequest) -> HttpResponse:
 @login_required
 @require_POST
 def add_list(request: HttpRequest) -> HttpResponse:
-    List.objects.create(user_id=request.user, list_name=request.POST.get("list_name"))
+    form = ListForm(request.POST)
+    if form.is_valid():
+        list_obj: List = form.save(commit=False)
+        list_obj.user_id = request.user
+        list_obj.save()
+    else:
+        messages.error(request, form.errors["list_name"][0])
     return redirect("lists_index")
 
 

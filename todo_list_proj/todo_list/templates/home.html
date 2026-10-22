@@ -11,6 +11,9 @@
     {% load socialaccount %}
     <div class="container-fluid">
         <h1><p class="text-success text-center">To-Do List</p></h1>
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} text-center">{{ message }}</div>
+        {% endfor %}
 
         {% if user.is_authenticated %}
         <h3><p class="text-center">You are signed in as <u>{{ user.email|default:user.username }}</u></p></h3>

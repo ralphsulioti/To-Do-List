@@ -358,3 +358,50 @@ class PostOnlyTest(TestCase):
                     f"{reverse('account_login')}?next={url}",
                     fetch_redirect_response=False,
                 )
+
+
+# Tests that bad list names and item descriptions are rejected without a crash
+class ValidationTest(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="testuser", password="12345")
+        self.list = List.objects.create(user_id=self.user, list_name="Test List")
+        self.client.force_login(self.user)
+
+    def test_bad_list_names_are_rejected(self):
+        for data, message in [
+            ({"list_name": ""}, "Enter a list name."),
+            ({"list_name": "   "}, "Enter a list name."),
+            ({}, "Enter a list name."),
+            ({"list_name": "x" * 201}, "at most 200 characters (this one has 201)"),
+        ]:
+            with self.subTest(data=data):
+                response = self.client.post(reverse("add_list"), data, follow=True)
+                self.assertRedirects(response, reverse("lists_index"))
+                self.assertContains(response, message)
+        self.assertEqual(list(List.objects.all()), [self.list])
+
+    def test_bad_item_descriptions_are_rejected(self):
+        list_url = reverse("list_view", kwargs={"list_id": self.list.id})
+        add_url = reverse("add_item", kwargs={"list_id": self.list.id})
+        for data, message in [
+            ({"item_descr": ""}, "Enter an item description."),
+            ({"item_descr": "   "}, "Enter an item description."),
+            ({}, "Enter an item description."),
+            ({"item_descr": "x" * 201}, "at most 200 characters (this one has 201)"),
+        ]:
+            with self.subTest(data=data):
+                response = self.client.post(add_url, data, follow=True)
+                self.assertRedirects(response, list_url)
+                self.assertContains(response, message)
+        self.assertFalse(Item.objects.exists())
+
+    def test_names_are_stripped(self):
+        self.client.post(reverse("add_list"), {"list_name": "  Groceries  "})
+        self.client.post(
+            reverse("add_item", kwargs={"list_id": self.list.id}),
+            {"item_descr": "  Milk  "},
+        )
+        self.assertTrue(List.objects.filter(list_name="Groceries").exists())
+        item = Item.objects.get(item_descr="Milk")
+        self.assertFalse(item.item_done)
+        self.assertIsNotNone(item.item_date_added)
