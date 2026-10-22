@@ -1,13 +1,19 @@
+from django.conf import settings
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 
 from .models import Item, List
 
 
-def home(request):
-    return render(request, "home.html")
+def home(request: HttpRequest) -> HttpResponse:
+    return render(
+        request,
+        "home.html",
+        {"google_login_enabled": settings.GOOGLE_LOGIN_ENABLED},
+    )
 
 
 def logout_view(request):

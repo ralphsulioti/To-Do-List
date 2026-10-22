@@ -1,9 +1,53 @@
 from django.contrib.auth.models import User
-from django.test import Client, TestCase
+from django.test import Client, TestCase, override_settings
 from django.urls import reverse
 from django.utils import timezone
 
 from .models import Item, List
+
+GOOGLE_PROVIDER_WITHOUT_APP = {"google": {"SCOPE": ["profile", "email"]}}
+GOOGLE_PROVIDER_WITH_APP = {
+    "google": {
+        "SCOPE": ["profile", "email"],
+        "APPS": [{"client_id": "test-client-id", "secret": "test-secret", "key": ""}],
+    }
+}
+
+
+# Tests the home page with and without Google sign-in configured
+class HomePageTest(TestCase):
+    @override_settings(
+        GOOGLE_LOGIN_ENABLED=False, SOCIALACCOUNT_PROVIDERS=GOOGLE_PROVIDER_WITHOUT_APP
+    )
+    def test_home_without_google(self):
+        response = self.client.get(reverse("home"))
+
+        # The page renders with local login and signup, and no Google button
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, reverse("account_login"))
+        self.assertContains(response, reverse("account_signup"))
+        self.assertNotContains(response, "Sign in with Google")
+
+    @override_settings(
+        GOOGLE_LOGIN_ENABLED=True, SOCIALACCOUNT_PROVIDERS=GOOGLE_PROVIDER_WITH_APP
+    )
+    def test_home_with_google(self):
+        response = self.client.get(reverse("home"))
+
+        # The Google button is a POST form to allauth's Google login URL
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Sign in with Google")
+        self.assertContains(
+            response, f'method="post" action="{reverse("google_login")}?next=%2F"'
+        )
+
+    def test_home_shows_username_without_email(self):
+        user = User.objects.create_user(username="noemail", password="12345")
+        self.client.force_login(user)
+
+        response = self.client.get(reverse("home"))
+
+        self.assertContains(response, "You are signed in as <u>noemail</u>")
 
 
 # Tests user creation, login, and logout
