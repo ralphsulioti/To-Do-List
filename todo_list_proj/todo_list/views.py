@@ -1,11 +1,21 @@
 from django.conf import settings
-from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
+from django.views.decorators.http import require_POST
 
 from .models import Item, List
+
+
+def get_user_list(request: HttpRequest, list_id: int) -> List:
+    """Return the requesting user's list with this id, or raise Http404."""
+    return get_object_or_404(List, pk=list_id, user_id=request.user)
+
+
+def get_user_item(request: HttpRequest, item_id: int) -> Item:
+    """Return an item on one of the requesting user's lists, or raise Http404."""
+    return get_object_or_404(Item, pk=item_id, list_id__user_id=request.user)
 
 
 def home(request: HttpRequest) -> HttpResponse:
@@ -16,14 +26,9 @@ def home(request: HttpRequest) -> HttpResponse:
     )
 
 
-def logout_view(request):
-    logout(request)
-    return redirect("/")
-
-
 @login_required
-def list_view(request, list_id):
-    list_obj = get_object_or_404(List, pk=list_id)
+def list_view(request: HttpRequest, list_id: int) -> HttpResponse:
+    list_obj = get_user_list(request, list_id)
     filter_option = request.GET.get("filter")
 
     if filter_option == "date_added":
@@ -41,44 +46,44 @@ def list_view(request, list_id):
 
 
 @login_required
-def delete_item(request, item_id):
-    item = get_object_or_404(Item, pk=item_id)
-    if request.method == "POST" and item.list_id.user_id == request.user:
-        item.delete()
+@require_POST
+def delete_item(request: HttpRequest, item_id: int) -> HttpResponse:
+    item = get_user_item(request, item_id)
+    item.delete()
     return redirect("list_view", list_id=item.list_id.id)
 
 
-def add_item(request, list_id):
-    list_obj = get_object_or_404(List, pk=list_id)
-    if request.method == "POST":
-        item_descr = request.POST.get("item_descr")
-        if list_obj.user_id == request.user:
-            Item.objects.create(
-                list_id=list_obj,
-                item_descr=item_descr,
-                item_date_added=timezone.now(),
-                item_done=False,
-            )
-    return redirect("list_view", list_id=list_id)
+@login_required
+@require_POST
+def add_item(request: HttpRequest, list_id: int) -> HttpResponse:
+    list_obj = get_user_list(request, list_id)
+    Item.objects.create(
+        list_id=list_obj,
+        item_descr=request.POST.get("item_descr"),
+        item_date_added=timezone.now(),
+        item_done=False,
+    )
+    return redirect("list_view", list_id=list_obj.id)
 
 
 @login_required
-def item_details(request, item_id):
-    item = get_object_or_404(Item, pk=item_id)
+def item_details(request: HttpRequest, item_id: int) -> HttpResponse:
+    item = get_user_item(request, item_id)
     list_name = item.list_id.list_name
     return render(request, "item_details.html", {"item": item, "list_name": list_name})
 
 
 @login_required
-def item_done(request, item_id):
-    item = get_object_or_404(Item, pk=item_id)
+@require_POST
+def item_done(request: HttpRequest, item_id: int) -> HttpResponse:
+    item = get_user_item(request, item_id)
     item.item_done = not item.item_done
     item.save()
     return redirect("list_view", list_id=item.list_id.id)
 
 
 @login_required
-def lists_index(request):
+def lists_index(request: HttpRequest) -> HttpResponse:
     filter_option = request.GET.get("filter")
 
     if filter_option == "list_name":
@@ -89,17 +94,14 @@ def lists_index(request):
 
 
 @login_required
-def add_list(request):
-    if request.method == "POST":
-        user_fk = request.user
-        list_name = request.POST.get("list_name")
-        List.objects.create(user_id=user_fk, list_name=list_name)
+@require_POST
+def add_list(request: HttpRequest) -> HttpResponse:
+    List.objects.create(user_id=request.user, list_name=request.POST.get("list_name"))
     return redirect("lists_index")
 
 
 @login_required
-def delete_list(request, list_id):
-    list_obj = get_object_or_404(List, pk=list_id)
-    if request.method == "POST" and request.user == list_obj.user_id:
-        list_obj.delete()
+@require_POST
+def delete_list(request: HttpRequest, list_id: int) -> HttpResponse:
+    get_user_list(request, list_id).delete()
     return redirect("lists_index")

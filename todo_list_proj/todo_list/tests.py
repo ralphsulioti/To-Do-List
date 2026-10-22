@@ -61,11 +61,12 @@ class UserAuthenticationTest(TestCase):
         self.client.force_login(self.user)
         self.assertTrue(self.user.is_authenticated)
 
+        # A GET only shows the logout confirmation page
+        response = self.client.get(reverse("account_logout"))
+        self.assertTrue(response.wsgi_request.user.is_authenticated)
+
         # Test user logout
-        logout_url = reverse(
-            "logout_view"
-        )  # Assuming you have a URL named 'logout' for the logout functionality
-        response = self.client.get(logout_url)
+        response = self.client.post(reverse("account_logout"))
 
         # Check if the user is logged out
         self.assertFalse(response.wsgi_request.user.is_authenticated)
@@ -273,3 +274,87 @@ class ItemDetailsTest(TestCase):
 
         # Logging the user out
         self.client.logout()
+
+
+# Tests that one user can't see or change another user's lists and items
+class OwnershipTest(TestCase):
+    def setUp(self):
+        self.owner = User.objects.create_user(username="owner", password="12345")
+        self.other_user = User.objects.create_user(username="other", password="12345")
+        self.list = List.objects.create(user_id=self.owner, list_name="Owner's List")
+        self.item = Item.objects.create(
+            list_id=self.list,
+            item_date_added=timezone.now(),
+            item_descr="Owner's Item",
+            item_done=False,
+        )
+        self.client.force_login(self.other_user)
+
+    def test_other_user_gets_404_on_views(self):
+        for url in [
+            reverse("list_view", kwargs={"list_id": self.list.id}),
+            reverse("item_details", kwargs={"item_id": self.item.id}),
+        ]:
+            with self.subTest(url=url):
+                self.assertEqual(self.client.get(url).status_code, 404)
+
+    def test_other_user_gets_404_on_changes(self):
+        for url, data in [
+            (reverse("item_done", kwargs={"item_id": self.item.id}), {}),
+            (
+                reverse("add_item", kwargs={"list_id": self.list.id}),
+                {"item_descr": "Intruder's Item"},
+            ),
+            (reverse("delete_item", kwargs={"item_id": self.item.id}), {}),
+            (reverse("delete_list", kwargs={"list_id": self.list.id}), {}),
+        ]:
+            with self.subTest(url=url):
+                self.assertEqual(self.client.post(url, data).status_code, 404)
+
+        # Nothing changed in the database
+        self.item.refresh_from_db()
+        self.assertFalse(self.item.item_done)
+        self.assertEqual(list(Item.objects.all()), [self.item])
+        self.assertEqual(list(List.objects.all()), [self.list])
+
+
+# Tests that data only changes on POST
+class PostOnlyTest(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="testuser", password="12345")
+        self.list = List.objects.create(user_id=self.user, list_name="Test List")
+        self.item = Item.objects.create(
+            list_id=self.list,
+            item_date_added=timezone.now(),
+            item_descr="Test Item",
+            item_done=False,
+        )
+        self.mutating_urls = [
+            reverse("item_done", kwargs={"item_id": self.item.id}),
+            reverse("add_item", kwargs={"list_id": self.list.id}),
+            reverse("add_list"),
+            reverse("delete_item", kwargs={"item_id": self.item.id}),
+            reverse("delete_list", kwargs={"list_id": self.list.id}),
+        ]
+
+    def test_get_returns_405(self):
+        self.client.force_login(self.user)
+        for url in self.mutating_urls:
+            with self.subTest(url=url):
+                self.assertEqual(self.client.get(url).status_code, 405)
+
+        # Nothing changed in the database
+        self.item.refresh_from_db()
+        self.assertFalse(self.item.item_done)
+        self.assertEqual(list(Item.objects.all()), [self.item])
+        self.assertEqual(list(List.objects.all()), [self.list])
+
+    def test_logged_out_post_redirects_to_login(self):
+        for url in self.mutating_urls:
+            with self.subTest(url=url):
+                response = self.client.post(url)
+                self.assertRedirects(
+                    response,
+                    f"{reverse('account_login')}?next={url}",
+                    fetch_redirect_response=False,
+                )

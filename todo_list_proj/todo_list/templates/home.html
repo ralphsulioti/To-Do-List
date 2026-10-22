@@ -14,7 +14,10 @@
 
         {% if user.is_authenticated %}
         <h3><p class="text-center">You are signed in as <u>{{ user.email|default:user.username }}</u></p></h3>
-        <h4><p class="text-center"><a href="{% url 'logout_view' %}"><button>Logout</button></a></p></h4>
+        <h4><form class="text-center" method="post" action="{% url 'account_logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form></h4>
         {% else %}
         {% if google_login_enabled %}
         <h4><form class="text-center" method="post" action="{% provider_login_url 'google' next='/' %}">
