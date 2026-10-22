@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 from django.contrib.auth.models import User
 from django.test import Client, TestCase, override_settings
 from django.urls import reverse
@@ -405,3 +407,142 @@ class ValidationTest(TestCase):
         item = Item.objects.get(item_descr="Milk")
         self.assertFalse(item.item_done)
         self.assertIsNotNone(item.item_date_added)
+
+
+# Tests each sort option, the fallback for unknown options, and the selected option
+class SortingTest(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="testuser", password="12345")
+        self.client.force_login(self.user)
+
+        self.list = List.objects.create(user_id=self.user, list_name="Work")
+        groceries = List.objects.create(user_id=self.user, list_name="Groceries")
+        chores = List.objects.create(user_id=self.user, list_name="Chores")
+        self.lists_by_creation = [self.list, groceries, chores]
+        other_user = User.objects.create_user(username="other", password="12345")
+        List.objects.create(user_id=other_user, list_name="Another user's list")
+
+        # "Banana" and "Date" share a date, so the order between them comes from the id
+        now = timezone.now()
+        self.cherry = self.make_item("Cherry", now - timedelta(days=2), done=True)
+        self.apple = self.make_item("Apple", now, done=False)
+        self.banana = self.make_item("Banana", now - timedelta(days=1), done=False)
+        self.date = self.make_item("Date", now - timedelta(days=1), done=True)
+
+    def make_item(self, description: str, date_added: datetime, done: bool) -> Item:
+        return Item.objects.create(
+            list_id=self.list,
+            item_descr=description,
+            item_date_added=date_added,
+            item_done=done,
+        )
+
+    def get_items(self, query: dict[str, str]) -> list[Item]:
+        url = reverse("list_view", kwargs={"list_id": self.list.id})
+        return list(self.client.get(url, query).context["list_items"])
+
+    def test_item_sort_orders(self):
+        oldest_first = [self.cherry, self.banana, self.date, self.apple]
+        for query, expected in [
+            ({}, oldest_first),
+            ({"sort": "normal"}, oldest_first),
+            ({"sort": "unknown"}, oldest_first),
+            ({"sort": "date_added"}, [self.apple, self.date, self.banana, self.cherry]),
+            (
+                {"sort": "description"},
+                [self.apple, self.banana, self.cherry, self.date],
+            ),
+            ({"sort": "completed"}, [self.banana, self.apple, self.cherry, self.date]),
+        ]:
+            with self.subTest(query=query):
+                self.assertEqual(self.get_items(query), expected)
+
+    def test_list_sort_orders(self):
+        work, groceries, chores = self.lists_by_creation
+        for query, expected in [
+            ({}, [work, groceries, chores]),
+            ({"sort": "oldToNew"}, [work, groceries, chores]),
+            ({"sort": "unknown"}, [work, groceries, chores]),
+            ({"sort": "list_name"}, [chores, groceries, work]),
+        ]:
+            with self.subTest(query=query):
+                response = self.client.get(reverse("lists_index"), query)
+                self.assertEqual(list(response.context["lists"]), expected)
+
+    def test_selected_option_stays_selected(self):
+        list_url = reverse("list_view", kwargs={"list_id": self.list.id})
+        for url, query, selected in [
+            (list_url, {}, "normal"),
+            (list_url, {"sort": "description"}, "description"),
+            (list_url, {"sort": "unknown"}, "normal"),
+            (reverse("lists_index"), {}, "oldToNew"),
+            (reverse("lists_index"), {"sort": "list_name"}, "list_name"),
+        ]:
+            with self.subTest(url=url, query=query):
+                response = self.client.get(url, query)
+                self.assertContains(response, f'<option value="{selected}" selected>')
+                self.assertContains(response, " selected>", count=1)
+
+
+# Tests that adding, toggling and deleting keep the page's current sort
+class KeepSortTest(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="testuser", password="12345")
+        self.client.force_login(self.user)
+        self.list = List.objects.create(user_id=self.user, list_name="Test List")
+        self.list_url = reverse("list_view", kwargs={"list_id": self.list.id})
+
+    def make_item(self) -> Item:
+        return Item.objects.create(list_id=self.list, item_descr="Test Item")
+
+    def test_item_changes_keep_the_sort(self):
+        for sort, expected_url in [
+            ("description", f"{self.list_url}?sort=description"),
+            ("normal", self.list_url),
+            ("unknown", self.list_url),
+        ]:
+            for url, data in [
+                (
+                    reverse("add_item", kwargs={"list_id": self.list.id}),
+                    {"item_descr": "New Item"},
+                ),
+                (reverse("add_item", kwargs={"list_id": self.list.id}), {}),
+                (reverse("item_done", kwargs={"item_id": self.make_item().id}), {}),
+                (reverse("delete_item", kwargs={"item_id": self.make_item().id}), {}),
+            ]:
+                with self.subTest(sort=sort, url=url, data=data):
+                    response = self.client.post(url, {**data, "sort": sort})
+                    self.assertRedirects(
+                        response, expected_url, fetch_redirect_response=False
+                    )
+
+    def test_list_changes_keep_the_sort(self):
+        lists_url = reverse("lists_index")
+        for sort, expected_url in [
+            ("list_name", f"{lists_url}?sort=list_name"),
+            ("oldToNew", lists_url),
+        ]:
+            other_list = List.objects.create(user_id=self.user, list_name="Other")
+            for url, data in [
+                (reverse("add_list"), {"list_name": "New List"}),
+                (reverse("add_list"), {}),
+                (reverse("delete_list", kwargs={"list_id": other_list.id}), {}),
+            ]:
+                with self.subTest(sort=sort, url=url, data=data):
+                    response = self.client.post(url, {**data, "sort": sort})
+                    self.assertRedirects(
+                        response, expected_url, fetch_redirect_response=False
+                    )
+
+    def test_forms_post_the_current_sort(self):
+        self.make_item()
+        response = self.client.get(self.list_url, {"sort": "completed"})
+        # Add, toggle and delete forms
+        self.assertContains(
+            response, '<input type="hidden" name="sort" value="completed">', count=3
+        )
+        response = self.client.get(reverse("lists_index"), {"sort": "list_name"})
+        # Add and delete forms
+        self.assertContains(
+            response, '<input type="hidden" name="sort" value="list_name">', count=2
+        )

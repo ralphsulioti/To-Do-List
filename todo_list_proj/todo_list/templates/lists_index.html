@@ -14,15 +14,16 @@
         {% endfor %}
         <form action="{% url 'add_list' %}" method="post">
             {% csrf_token %}
+            <input type="hidden" name="sort" value="{{ sort }}">
             <label for="list_name"><h2>New List:</h2></label>
             <input type="text" id="list_name" name="list_name">
             <button type="submit">Add List</button>
         </form>
         <form action="{% url 'lists_index' %}" method="get">
-            <label for="filter">Filter by:</label>
-            <select id="filter" name="filter">
-                <option value="list_name">Alphabetically</option>
-                <option value="oldToNew">Date Added</option>
+            <label for="sort">Sort by:</label>
+            <select id="sort" name="sort">
+                <option value="oldToNew"{% if sort == "oldToNew" %} selected{% endif %}>Date Added</option>
+                <option value="list_name"{% if sort == "list_name" %} selected{% endif %}>Alphabetically</option>
             </select>
             <button type="submit">Apply</button>
         </form>
@@ -32,6 +33,7 @@
                 <li class="list-group-item"><h4>{{ list.list_name }}</h4>
                         <form action="{% url 'delete_list' list.id %}" method="post" style="display: inline;">
                             {% csrf_token %}
+                            <input type="hidden" name="sort" value="{{ sort }}">
                             <button type="submit">Delete</button>
                         </form>
                         <a href="{% url 'list_view' list.id %}"><button>Details</button></a>

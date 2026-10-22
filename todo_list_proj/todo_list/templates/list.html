@@ -17,17 +17,17 @@
         {% endfor %}
         <form action="{% url 'add_item' list_obj.id %}" method="post">
             {% csrf_token %}
+            <input type="hidden" name="sort" value="{{ sort }}">
             <label for="item_descr">New Item:</label>
             <input type="text" id="item_descr" name="item_descr"><button type="submit">Add Item</button>
         </form>
         <form action="{% url 'list_view' list_obj.id %}" method="get">
-            <label for="filter">Filter by:</label>
-            <select id="filter" name="filter">
-                <option value="none"------</option>
-                <option value="normal">Oldest to Newest</option>
-                <option value="date_added">Newest to Oldest</option>
-                <option value="description">Name</option>
-                <option value="completed">Completed</option>
+            <label for="sort">Sort by:</label>
+            <select id="sort" name="sort">
+                <option value="normal"{% if sort == "normal" %} selected{% endif %}>Oldest to Newest</option>
+                <option value="date_added"{% if sort == "date_added" %} selected{% endif %}>Newest to Oldest</option>
+                <option value="description"{% if sort == "description" %} selected{% endif %}>Name</option>
+                <option value="completed"{% if sort == "completed" %} selected{% endif %}>Completed</option>
             </select>
             <button type="submit">Apply</button>
         </form>
@@ -39,17 +39,20 @@
                     <h3><p class="text-center"><del>{{ item.item_descr }}</del></p></h3>
                         <form action="{% url 'item_done' item.id %}" method="post" style="display: inline;">
                             {% csrf_token %}
+                            <input type="hidden" name="sort" value="{{ sort }}">
                             <button type="submit">Not Done</button>
                         </form>
                     {% else %}
                     <h3><p class="text-center">{{ item.item_descr }}</p></h3>
                         <form action="{% url 'item_done' item.id %}" method="post" style="display: inline;">
                             {% csrf_token %}
+                            <input type="hidden" name="sort" value="{{ sort }}">
                             <button type="submit">Done</button>
                         </form>
                     {% endif %}
                     <form action="{% url 'delete_item' item.id %}" method="post" style="display: inline;">
                         {% csrf_token %}
+                        <input type="hidden" name="sort" value="{{ sort }}">
                         <button type="submit">Delete</button>
                     </form>
                     <a href="{% url 'item_details' item.id %}"><button>Details</button></a>
