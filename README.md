@@ -10,7 +10,7 @@ A to-do list web app built with Django and Bootstrap 5. Users can:
 4. View an item's details: its status, when it was added, and its list
 5. Sort lists by date added or name, and items by date, name or status
 
-Each user sees only their own lists and items. The tests use Django's built-in test framework, and GitHub Actions runs them, with linting, on every push to `main`.
+Each user sees only their own lists and items. The tests use Django's built-in test framework, and GitHub Actions runs them, with linting, on pull requests and pushes to `main`.
 
 ## Screenshots
 
