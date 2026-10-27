@@ -6,7 +6,7 @@ from .models import Item, List
 
 
 class ListForm(forms.ModelForm):
-    """Validates a new list's name: stripped, non-blank, at most 200 characters."""
+    """Validates a new list's name: stripped, non-blank, and within the model's max_length."""
 
     class Meta:
         model = List
@@ -21,7 +21,7 @@ class ListForm(forms.ModelForm):
 
 
 class ItemForm(forms.ModelForm):
-    """Validates a new item's description: stripped, non-blank, at most 200 characters."""
+    """Validates a new item's description: stripped, non-blank, and within the model's max_length."""
 
     class Meta:
         model = Item

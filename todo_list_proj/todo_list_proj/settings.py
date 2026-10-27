@@ -24,6 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # Without DJANGO_SECRET_KEY, each start gets a new random key, which logs everyone out.
+# runserver starts a new process on every code change, so set a key in .env.
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY") or get_random_secret_key()
 
 DEBUG = os.environ.get("DJANGO_DEBUG") == "1"

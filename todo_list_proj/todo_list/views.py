@@ -11,9 +11,8 @@ from django.views.decorators.http import require_POST
 from .forms import ItemForm, ListForm
 from .models import Item, List
 
-# Sort option (the `sort` parameter) -> ordering. The first entry is the
-# default, and an unknown option falls back to it. Each order ends in `id`, so
-# ties always come out the same way.
+# Sort option (the `sort` parameter) -> ordering; the first entry is the default.
+# Each order ends in `id`, so ties always come out the same way.
 ITEM_SORT_ORDERS: dict[str, tuple[str, ...]] = {
     "normal": ("item_date_added", "id"),
     "date_added": ("-item_date_added", "-id"),
