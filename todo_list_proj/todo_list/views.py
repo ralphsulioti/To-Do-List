@@ -1,90 +1,148 @@
-from django.shortcuts import render, redirect, HttpResponse, get_object_or_404
-from django.contrib.auth import logout
+from urllib.parse import urlencode
+
+from django.conf import settings
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.utils import timezone
-from .models import List, Item
-from django.contrib.auth.models import User
-import logging
+from django.http import HttpRequest, HttpResponse, QueryDict
+from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
+from django.views.decorators.http import require_POST
 
-logger = logging.getLogger(__name__)
+from .forms import ItemForm, ListForm
+from .models import Item, List
+
+# Sort option (the `sort` parameter) -> ordering; the first entry is the default.
+# Each order ends in `id`, so ties always come out the same way.
+ITEM_SORT_ORDERS: dict[str, tuple[str, ...]] = {
+    "normal": ("item_date_added", "id"),
+    "date_added": ("-item_date_added", "-id"),
+    "description": ("item_descr", "id"),
+    "completed": ("item_done", "item_date_added", "id"),
+}
+# Lists have no creation date; `id` is creation order.
+LIST_SORT_ORDERS: dict[str, tuple[str, ...]] = {
+    "oldToNew": ("id",),
+    "list_name": ("list_name", "id"),
+}
 
 
-def home(request):
-    return render(request, 'home.html')
+def get_sort_option(params: QueryDict, sort_orders: dict[str, tuple[str, ...]]) -> str:
+    """Return `params["sort"]` if it's in `sort_orders`, else the first option."""
+    sort = params.get("sort", "")
+    return sort if sort in sort_orders else next(iter(sort_orders))
 
-def logout_view(request):
-    logout(request)
-    return redirect("/")
+
+def url_keeping_sort(
+    url: str, request: HttpRequest, sort_orders: dict[str, tuple[str, ...]]
+) -> str:
+    """Return `url` with the form's posted sort option added, unless it's the default."""
+    sort = get_sort_option(request.POST, sort_orders)
+    if sort == next(iter(sort_orders)):
+        return url
+    return f"{url}?{urlencode({'sort': sort})}"
+
+
+def redirect_to_list(request: HttpRequest, list_id: int) -> HttpResponse:
+    """Redirect to a list's page, keeping the item sort the form was posted from."""
+    url = reverse("list_view", kwargs={"list_id": list_id})
+    return redirect(url_keeping_sort(url, request, ITEM_SORT_ORDERS))
+
+
+def redirect_to_lists_index(request: HttpRequest) -> HttpResponse:
+    """Redirect to the lists page, keeping the list sort the form was posted from."""
+    return redirect(url_keeping_sort(reverse("lists_index"), request, LIST_SORT_ORDERS))
+
+
+def get_user_list(request: HttpRequest, list_id: int) -> List:
+    """Return the requesting user's list with this id, or raise Http404."""
+    return get_object_or_404(List, pk=list_id, user=request.user)
+
+
+def get_user_item(request: HttpRequest, item_id: int) -> Item:
+    """Return an item on one of the requesting user's lists, or raise Http404."""
+    return get_object_or_404(Item, pk=item_id, list__user=request.user)
+
+
+def home(request: HttpRequest) -> HttpResponse:
+    return render(
+        request,
+        "home.html",
+        {"google_login_enabled": settings.GOOGLE_LOGIN_ENABLED},
+    )
+
 
 @login_required
-def list_view(request, list_id):
-    list_obj = get_object_or_404(List, pk=list_id)
-    filter_option = request.GET.get('filter')
+def list_view(request: HttpRequest, list_id: int) -> HttpResponse:
+    list_obj = get_user_list(request, list_id)
+    sort = get_sort_option(request.GET, ITEM_SORT_ORDERS)
+    list_items = Item.objects.filter(list=list_obj).order_by(*ITEM_SORT_ORDERS[sort])
+    return render(
+        request,
+        "list.html",
+        {"list_obj": list_obj, "list_items": list_items, "sort": sort},
+    )
 
 
-    if filter_option == 'date_added':
-        list_items = Item.objects.filter(list_id=list_obj).order_by('-item_date_added')
-    elif filter_option == 'description':
-        list_items = Item.objects.filter(list_id=list_obj).order_by('item_descr')
-    elif filter_option == 'completed':
-        list_items = Item.objects.filter(list_id=list_obj).order_by('item_done')
+@login_required
+@require_POST
+def delete_item(request: HttpRequest, item_id: int) -> HttpResponse:
+    item = get_user_item(request, item_id)
+    item.delete()
+    return redirect_to_list(request, item.list_id)
+
+
+@login_required
+@require_POST
+def add_item(request: HttpRequest, list_id: int) -> HttpResponse:
+    list_obj = get_user_list(request, list_id)
+    form = ItemForm(request.POST)
+    if form.is_valid():
+        item: Item = form.save(commit=False)
+        item.list = list_obj
+        item.save()
     else:
-        list_items = Item.objects.filter(list_id=list_obj)
-
-    return render(request, 'list.html', {'list_obj': list_obj, 'list_items': list_items})
+        messages.error(request, form.errors["item_descr"][0])
+    return redirect_to_list(request, list_obj.id)
 
 
 @login_required
-def delete_item(request, item_id):
-    item = get_object_or_404(Item, pk=item_id)
-    if request.method == 'POST' and item.list_id.user_id == request.user:
-        item.delete()
-    return redirect('list_view', list_id=item.list_id.id)
+def item_details(request: HttpRequest, item_id: int) -> HttpResponse:
+    item = get_user_item(request, item_id)
+    list_name = item.list.list_name
+    return render(request, "item_details.html", {"item": item, "list_name": list_name})
 
-
-def add_item(request, list_id):
-    list_obj = get_object_or_404(List, pk=list_id)
-    if request.method == 'POST':
-        item_descr = request.POST.get('item_descr')
-        if list_obj.user_id == request.user:
-            new_item = Item.objects.create(list_id=list_obj, item_descr=item_descr, item_date_added=timezone.now(), item_done=False)
-    return redirect('list_view', list_id=list_id)
 
 @login_required
-def item_details(request, item_id):
-    item = get_object_or_404(Item, pk=item_id)
-    list_name = item.list_id.list_name
-    return render(request, 'item_details.html', {'item': item, 'list_name': list_name})
-
-@login_required
-def item_done(request, item_id):
-    item = get_object_or_404(Item, pk=item_id)
+@require_POST
+def item_done(request: HttpRequest, item_id: int) -> HttpResponse:
+    item = get_user_item(request, item_id)
     item.item_done = not item.item_done
     item.save()
-    return redirect('list_view', list_id = item.list_id.id)
+    return redirect_to_list(request, item.list_id)
+
 
 @login_required
-def lists_index(request):
-    filter_option = request.GET.get('filter')
+def lists_index(request: HttpRequest) -> HttpResponse:
+    sort = get_sort_option(request.GET, LIST_SORT_ORDERS)
+    lists = List.objects.filter(user=request.user).order_by(*LIST_SORT_ORDERS[sort])
+    return render(request, "lists_index.html", {"lists": lists, "sort": sort})
 
-    if filter_option == 'list_name':
-        lists = List.objects.filter(user_id=request.user).order_by('list_name')
+
+@login_required
+@require_POST
+def add_list(request: HttpRequest) -> HttpResponse:
+    form = ListForm(request.POST)
+    if form.is_valid():
+        list_obj: List = form.save(commit=False)
+        list_obj.user = request.user
+        list_obj.save()
     else:
-        lists = List.objects.filter(user_id=request.user)
-    return render(request, 'lists_index.html', {'lists': lists})
+        messages.error(request, form.errors["list_name"][0])
+    return redirect_to_lists_index(request)
 
 
 @login_required
-def add_list(request):
-    if request.method == 'POST':
-        user_fk = request.user
-        list_name = request.POST.get('list_name')
-        new_list = List.objects.create(user_id=user_fk, list_name = list_name)
-    return redirect('lists_index')
-
-@login_required
-def delete_list(request, list_id):
-    list_obj = get_object_or_404(List, pk=list_id)
-    if request.method == 'POST' and request.user == list_obj.user_id:
-        list_obj.delete()
-    return redirect('lists_index')
+@require_POST
+def delete_list(request: HttpRequest, list_id: int) -> HttpResponse:
+    get_user_list(request, list_id).delete()
+    return redirect_to_lists_index(request)

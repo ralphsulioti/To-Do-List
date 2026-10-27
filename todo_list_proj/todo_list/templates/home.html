@@ -1,33 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>Django Google Sign In</title>
-</head>
-<body>
-    {% load socialaccount %}
-    <div class="container-fluid">
-        <h1><p class="text-success text-center">To-Do List</p></h1>
-
+{% extends "base.html" %}
+{% load socialaccount %}
+{% block head_title %}Home{% endblock head_title %}
+{% block content %}
+<div class="card shadow-sm text-center">
+    <div class="card-body p-4 p-sm-5">
+        <h1 class="h2 text-success">To-Do List</h1>
+        <p class="text-body-secondary mb-4">Keep your lists in one place and tick things off as you go.</p>
         {% if user.is_authenticated %}
-        <h3><p class="text-center">You are signed in as <u>{{user.email}}</u></p></h3>
-        <h4><p class="text-center"><a href="{% url 'logout_view' %}"><button>Logout</button></a></p></h4>
+        <p>Signed in as <strong>{{ user.email|default:user.username }}</strong></p>
+        <a class="btn btn-primary btn-lg" href="{% url 'lists_index' %}">Go to my lists</a>
         {% else %}
-        <h4><p class="text-center"><a href="{% provider_login_url 'google' %}?next=/"><button>Login</button></a></p></h4>
+        <div class="d-grid gap-2 col-sm-8 mx-auto">
+            {% if google_login_enabled %}
+            <form method="post" action="{% provider_login_url 'google' next='/' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-dark w-100">Sign in with Google</button>
+            </form>
+            {% endif %}
+            <a class="btn btn-primary" href="{% url 'account_login' %}">Log in</a>
+            <a class="btn btn-outline-primary" href="{% url 'account_signup' %}">Sign up</a>
+        </div>
         {% endif %}
-        <h4><p class="text-center"><a href="lists_index"><button>My Lists</button></a></p></h4>
     </div>
-    <br><br><br><br><br><br><br><br><br><br>
-    <figure class="text-center">
-      <blockquote class="blockquote">
-          <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
-      </blockquote>
-      <h4><figcaption class="blockquote-footer"><p class="text-success">
-        -Antoine de Saint-Exupery
-      </p></figcaption></h4>
-    </figure>
-</body>
-</html>
+</div>
+{% endblock content %}

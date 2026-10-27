@@ -1,69 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>List</title>
-</head>
-<body>
-
-    <div class="container-fluid">
-        <h1><p class="text-center text-success">List: {{list_obj.list_name }}</p></h1>
-        <form action="{% url 'add_item' list_obj.id %}" method="post">
+{% extends "base.html" %}
+{% block head_title %}{{ list_obj.list_name|default:"(untitled)" }}{% endblock head_title %}
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'lists_index' %}">Your lists</a></li>
+        <li class="breadcrumb-item active text-break" aria-current="page">{{ list_obj.list_name|default:"(untitled)" }}</li>
+    </ol>
+</nav>
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1 class="h4 mb-3 text-break">{{ list_obj.list_name|default:"(untitled)" }}</h1>
+        <form action="{% url 'add_item' list_obj.id %}" method="post" class="mb-3">
             {% csrf_token %}
-            <label for="item_descr">New Item:</label>
-            <input type="text" id="item_descr" name="item_descr"><button type="submit">Add Item</button>
+            <input type="hidden" name="sort" value="{{ sort }}">
+            <div class="input-group">
+                <input type="text" class="form-control" name="item_descr" placeholder="New item" aria-label="New item" maxlength="200" required>
+                <button type="submit" class="btn btn-primary">{% include "icons/plus.svg" %} Add</button>
+            </div>
         </form>
-        <form action="{% url 'list_view' list_obj.id %}" method="get">
-            <label for="filter">Filter by:</label>
-            <select id="filter" name="filter">
-                <option value="none"------</option>
-                <option value="normal">Oldest to Newest</option>
-                <option value="date_added">Newest to Oldest</option>
-                <option value="description">Name</option>
-                <option value="completed">Completed</option>
-            </select>
-            <button type="submit">Apply</button>
+        {% if list_items %}
+        <form action="{% url 'list_view' list_obj.id %}" method="get" class="mb-3">
+            <div class="input-group input-group-sm sort-group">
+                <label class="input-group-text" for="sort">Sort by</label>
+                <select class="form-select" id="sort" name="sort">
+                    <option value="normal"{% if sort == "normal" %} selected{% endif %}>Oldest first</option>
+                    <option value="date_added"{% if sort == "date_added" %} selected{% endif %}>Newest first</option>
+                    <option value="description"{% if sort == "description" %} selected{% endif %}>Name</option>
+                    <option value="completed"{% if sort == "completed" %} selected{% endif %}>Not done first</option>
+                </select>
+                <button type="submit" class="btn btn-outline-secondary">Apply</button>
+            </div>
         </form>
-
-        <ul>
+        <ul class="list-group">
             {% for item in list_items %}
-                <li>
+            <li class="list-group-item d-flex align-items-center gap-2">
+                <form action="{% url 'item_done' item.id %}" method="post" class="m-0">
+                    {% csrf_token %}
+                    <input type="hidden" name="sort" value="{{ sort }}">
                     {% if item.item_done %}
-                    <h3><p class="text-center"><del>{{ item.item_descr }}</del></p></h3>
-                        <form action="{% url 'item_done' item.id %}" method="post" style="display: inline;">
-                            {% csrf_token %}
-                            <button type="submit">Not Done</button>
-                        </form>
+                    <button type="submit" class="btn btn-sm btn-success rounded-circle toggle-done" aria-label="Mark as not done" title="Mark as not done">{% include "icons/check.svg" %}</button>
                     {% else %}
-                    <h3><p class="text-center">{{ item.item_descr }}</p></h3>
-                        <form action="{% url 'item_done' item.id %}" method="post" style="display: inline;">
-                            {% csrf_token %}
-                            <button type="submit">Done</button>
-                        </form>
+                    <button type="submit" class="btn btn-sm btn-outline-secondary rounded-circle toggle-done" aria-label="Mark as done" title="Mark as done">{% include "icons/check.svg" %}</button>
                     {% endif %}
-                    <form action="{% url 'delete_item' item.id %}" method="post" style="display: inline;">
-                        {% csrf_token %}
-                        <button type="submit">Delete</button>
-                    </form>
-                    <a href="{% url 'item_details' item.id %}"><button>Details</button></a>
-                </li>
+                </form>
+                <span class="flex-grow-1 text-break{% if item.item_done %} item-done{% endif %}">{{ item.item_descr|default:"(empty)" }}</span>
+                <a class="btn btn-sm btn-outline-secondary" href="{% url 'item_details' item.id %}" aria-label="Item details" title="Item details">{% include "icons/info.svg" %}</a>
+                <form action="{% url 'delete_item' item.id %}" method="post" class="m-0">
+                    {% csrf_token %}
+                    <input type="hidden" name="sort" value="{{ sort }}">
+                    <button type="submit" class="btn btn-sm btn-outline-danger" aria-label="Delete item" title="Delete item">{% include "icons/trash.svg" %}</button>
+                </form>
+            </li>
             {% endfor %}
         </ul>
-
-        <p class="text-center"><a href="{% url 'lists_index' %}"><button>Back</button></a></p>
+        {% else %}
+        <p class="text-body-secondary text-center my-4">This list is empty. Add an item above.</p>
+        {% endif %}
     </div>
-    <br><br>
-    <figure class="text-center">
-      <blockquote class="blockquote">
-          <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
-      </blockquote>
-      <h4><figcaption class="blockquote-footer"><p class="text-success">
-        -Antoine de Saint-Exupery
-      </p></figcaption></h4>
-    </figure>
-</body>
-</html>
+</div>
+{% endblock content %}
