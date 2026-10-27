@@ -1,20 +1,73 @@
-ul {
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bs-tertiary-bg);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.app-container {
+    max-width: 40rem;
+}
+
+.user-name {
+    max-width: 14rem;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
+.sort-group {
+    max-width: 20rem;
+}
+
+.toggle-done {
+    display: inline-flex;
+    flex-shrink: 0;
     align-items: center;
-    list-style-position: inside;
-    text-align: center;
-    padding-left: 0;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
 }
 
-li {
-    margin-bottom: 10px;
-    display: inline-block;
-    vertical-align: middle;
+/* An open item's check shows only on hover. */
+.toggle-done.btn-outline-secondary .icon {
+    opacity: 0;
 }
 
-form {
-    margin: 0 auto;
-    width:250px;
+.toggle-done.btn-outline-secondary:hover .icon {
+    opacity: 0.6;
+}
+
+.item-done {
+    color: var(--bs-secondary-color);
+    text-decoration: line-through;
+}
+
+.auth-card {
+    max-width: 26rem;
+}
+
+/* allauth renders plain inputs; give them Bootstrap's form-control look. */
+.auth-card input:is([type="text"], [type="email"], [type="password"]) {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+
+.auth-card input:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }

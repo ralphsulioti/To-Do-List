@@ -55,12 +55,12 @@ def redirect_to_lists_index(request: HttpRequest) -> HttpResponse:
 
 def get_user_list(request: HttpRequest, list_id: int) -> List:
     """Return the requesting user's list with this id, or raise Http404."""
-    return get_object_or_404(List, pk=list_id, user_id=request.user)
+    return get_object_or_404(List, pk=list_id, user=request.user)
 
 
 def get_user_item(request: HttpRequest, item_id: int) -> Item:
     """Return an item on one of the requesting user's lists, or raise Http404."""
-    return get_object_or_404(Item, pk=item_id, list_id__user_id=request.user)
+    return get_object_or_404(Item, pk=item_id, list__user=request.user)
 
 
 def home(request: HttpRequest) -> HttpResponse:
@@ -75,7 +75,7 @@ def home(request: HttpRequest) -> HttpResponse:
 def list_view(request: HttpRequest, list_id: int) -> HttpResponse:
     list_obj = get_user_list(request, list_id)
     sort = get_sort_option(request.GET, ITEM_SORT_ORDERS)
-    list_items = Item.objects.filter(list_id=list_obj).order_by(*ITEM_SORT_ORDERS[sort])
+    list_items = Item.objects.filter(list=list_obj).order_by(*ITEM_SORT_ORDERS[sort])
     return render(
         request,
         "list.html",
@@ -88,7 +88,7 @@ def list_view(request: HttpRequest, list_id: int) -> HttpResponse:
 def delete_item(request: HttpRequest, item_id: int) -> HttpResponse:
     item = get_user_item(request, item_id)
     item.delete()
-    return redirect_to_list(request, item.list_id.id)
+    return redirect_to_list(request, item.list_id)
 
 
 @login_required
@@ -98,7 +98,7 @@ def add_item(request: HttpRequest, list_id: int) -> HttpResponse:
     form = ItemForm(request.POST)
     if form.is_valid():
         item: Item = form.save(commit=False)
-        item.list_id = list_obj
+        item.list = list_obj
         item.save()
     else:
         messages.error(request, form.errors["item_descr"][0])
@@ -108,7 +108,7 @@ def add_item(request: HttpRequest, list_id: int) -> HttpResponse:
 @login_required
 def item_details(request: HttpRequest, item_id: int) -> HttpResponse:
     item = get_user_item(request, item_id)
-    list_name = item.list_id.list_name
+    list_name = item.list.list_name
     return render(request, "item_details.html", {"item": item, "list_name": list_name})
 
 
@@ -118,13 +118,13 @@ def item_done(request: HttpRequest, item_id: int) -> HttpResponse:
     item = get_user_item(request, item_id)
     item.item_done = not item.item_done
     item.save()
-    return redirect_to_list(request, item.list_id.id)
+    return redirect_to_list(request, item.list_id)
 
 
 @login_required
 def lists_index(request: HttpRequest) -> HttpResponse:
     sort = get_sort_option(request.GET, LIST_SORT_ORDERS)
-    lists = List.objects.filter(user_id=request.user).order_by(*LIST_SORT_ORDERS[sort])
+    lists = List.objects.filter(user=request.user).order_by(*LIST_SORT_ORDERS[sort])
     return render(request, "lists_index.html", {"lists": lists, "sort": sort})
 
 
@@ -134,7 +134,7 @@ def add_list(request: HttpRequest) -> HttpResponse:
     form = ListForm(request.POST)
     if form.is_valid():
         list_obj: List = form.save(commit=False)
-        list_obj.user_id = request.user
+        list_obj.user = request.user
         list_obj.save()
     else:
         messages.error(request, form.errors["list_name"][0])

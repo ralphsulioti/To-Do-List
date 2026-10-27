@@ -46,7 +46,13 @@ class HomePageTest(TestCase):
 
         response = self.client.get(reverse("home"))
 
-        self.assertContains(response, "You are signed in as <u>noemail</u>")
+        self.assertContains(response, "Signed in as <strong>noemail</strong>")
+
+    def test_account_pages_use_the_app_layout(self):
+        response = self.client.get(reverse("account_login"))
+
+        self.assertContains(response, 'class="card shadow-sm auth-card')
+        self.assertContains(response, 'class="form-label"')
 
 
 class LogoutTest(TestCase):
@@ -65,13 +71,13 @@ class LogoutTest(TestCase):
 class OwnerActionsTest(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username="testuser", password="12345")
-        self.list = List.objects.create(user_id=self.user, list_name="Test List")
+        self.list = List.objects.create(user=self.user, list_name="Test List")
         self.client.force_login(self.user)
 
     def test_add_and_delete_list(self):
         self.client.post(reverse("add_list"), {"list_name": "Groceries"})
         new_list = List.objects.get(list_name="Groceries")
-        self.assertEqual(new_list.user_id, self.user)
+        self.assertEqual(new_list.user, self.user)
 
         self.client.post(reverse("delete_list", kwargs={"list_id": new_list.id}))
         self.assertFalse(List.objects.filter(pk=new_list.id).exists())
@@ -82,7 +88,7 @@ class OwnerActionsTest(TestCase):
             {"item_descr": "Milk"},
         )
         item = Item.objects.get(item_descr="Milk")
-        self.assertEqual(item.list_id, self.list)
+        self.assertEqual(item.list, self.list)
         self.assertFalse(item.item_done)
 
         toggle_url = reverse("item_done", kwargs={"item_id": item.id})
@@ -95,7 +101,7 @@ class OwnerActionsTest(TestCase):
         self.assertFalse(Item.objects.filter(pk=item.id).exists())
 
     def test_item_details(self):
-        item = Item.objects.create(list_id=self.list, item_descr="Milk")
+        item = Item.objects.create(list=self.list, item_descr="Milk")
 
         response = self.client.get(reverse("item_details", kwargs={"item_id": item.id}))
 
@@ -108,8 +114,8 @@ class OwnershipTest(TestCase):
     def setUp(self):
         self.owner = User.objects.create_user(username="owner", password="12345")
         self.other_user = User.objects.create_user(username="other", password="12345")
-        self.list = List.objects.create(user_id=self.owner, list_name="Owner's List")
-        self.item = Item.objects.create(list_id=self.list, item_descr="Owner's Item")
+        self.list = List.objects.create(user=self.owner, list_name="Owner's List")
+        self.item = Item.objects.create(list=self.list, item_descr="Owner's Item")
         self.client.force_login(self.other_user)
 
     def test_other_user_gets_404_on_views(self):
@@ -142,8 +148,8 @@ class OwnershipTest(TestCase):
 class PostOnlyTest(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username="testuser", password="12345")
-        self.list = List.objects.create(user_id=self.user, list_name="Test List")
-        self.item = Item.objects.create(list_id=self.list, item_descr="Test Item")
+        self.list = List.objects.create(user=self.user, list_name="Test List")
+        self.item = Item.objects.create(list=self.list, item_descr="Test Item")
         self.mutating_urls = [
             reverse("item_done", kwargs={"item_id": self.item.id}),
             reverse("add_item", kwargs={"list_id": self.list.id}),
@@ -177,7 +183,7 @@ class PostOnlyTest(TestCase):
 class ValidationTest(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username="testuser", password="12345")
-        self.list = List.objects.create(user_id=self.user, list_name="Test List")
+        self.list = List.objects.create(user=self.user, list_name="Test List")
         self.client.force_login(self.user)
 
     def test_bad_list_names_are_rejected(self):
@@ -223,12 +229,12 @@ class SortingTest(TestCase):
         self.user = User.objects.create_user(username="testuser", password="12345")
         self.client.force_login(self.user)
 
-        self.list = List.objects.create(user_id=self.user, list_name="Work")
-        groceries = List.objects.create(user_id=self.user, list_name="Groceries")
-        chores = List.objects.create(user_id=self.user, list_name="Chores")
+        self.list = List.objects.create(user=self.user, list_name="Work")
+        groceries = List.objects.create(user=self.user, list_name="Groceries")
+        chores = List.objects.create(user=self.user, list_name="Chores")
         self.lists_by_creation = [self.list, groceries, chores]
         other_user = User.objects.create_user(username="other", password="12345")
-        List.objects.create(user_id=other_user, list_name="Another user's list")
+        List.objects.create(user=other_user, list_name="Another user's list")
 
         # "Banana" and "Date" share a date, so the order between them comes from the id
         now = timezone.now()
@@ -239,7 +245,7 @@ class SortingTest(TestCase):
 
     def make_item(self, description: str, date_added: datetime, done: bool) -> Item:
         return Item.objects.create(
-            list_id=self.list,
+            list=self.list,
             item_descr=description,
             item_date_added=date_added,
             item_done=done,
@@ -296,11 +302,11 @@ class KeepSortTest(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username="testuser", password="12345")
         self.client.force_login(self.user)
-        self.list = List.objects.create(user_id=self.user, list_name="Test List")
+        self.list = List.objects.create(user=self.user, list_name="Test List")
         self.list_url = reverse("list_view", kwargs={"list_id": self.list.id})
 
     def make_item(self) -> Item:
-        return Item.objects.create(list_id=self.list, item_descr="Test Item")
+        return Item.objects.create(list=self.list, item_descr="Test Item")
 
     def test_item_changes_keep_the_sort(self):
         for sort, expected_url in [
@@ -329,7 +335,7 @@ class KeepSortTest(TestCase):
             ("list_name", f"{lists_url}?sort=list_name"),
             ("oldToNew", lists_url),
         ]:
-            other_list = List.objects.create(user_id=self.user, list_name="Other")
+            other_list = List.objects.create(user=self.user, list_name="Other")
             for url, data in [
                 (reverse("add_list"), {"list_name": "New List"}),
                 (reverse("add_list"), {}),

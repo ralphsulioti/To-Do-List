@@ -1,0 +1,46 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block head_title %}{% endblock head_title %} · To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    {% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+    <nav class="navbar bg-body border-bottom">
+        <div class="container app-container gap-2">
+            <a class="navbar-brand fw-semibold text-success" href="{% url 'home' %}">To-Do List</a>
+            <div class="d-flex align-items-center gap-2">
+                {% if user.is_authenticated %}
+                <a class="btn btn-sm btn-link text-decoration-none" href="{% url 'lists_index' %}">My Lists</a>
+                <span class="small text-body-secondary text-truncate d-none d-sm-inline user-name">{{ user.email|default:user.username }}</span>
+                <form method="post" action="{% url 'account_logout' %}" class="m-0">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-sm btn-outline-secondary">Log out</button>
+                </form>
+                {% else %}
+                <a class="btn btn-sm btn-link text-decoration-none" href="{% url 'account_login' %}">Log in</a>
+                <a class="btn btn-sm btn-primary" href="{% url 'account_signup' %}">Sign up</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <main class="container app-container py-4">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}" role="alert">{{ message }}</div>
+        {% endfor %}
+        {% block main %}{% block content %}{% endblock content %}{% endblock main %}
+    </main>
+
+    <footer class="container app-container text-center py-4">
+        <figure class="mb-0">
+            <blockquote class="blockquote fs-6 text-success mb-3">"A goal without a plan is just a wish"</blockquote>
+            <figcaption class="blockquote-footer mb-0">Antoine de Saint-Exupéry</figcaption>
+        </figure>
+    </footer>
+    {% block extra_body %}{% endblock extra_body %}
+</body>
+</html>

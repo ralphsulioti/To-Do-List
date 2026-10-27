@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>Item Details</title>
-</head>
-<body>
-    <div class="container-fluid">
-        <h1><p class="text-success text-center">Item Details</p></h1>
-        <h3><p class="text-center"><strong>Description:</strong> {{ item.item_descr }}</p>
-        <p class="text-center"><strong>Date Added:</strong> {{ item.item_date_added }}</p>
-        <p class="text-center"><strong>Status:</strong> {% if item.item_done %}Done{% else %}Not Done{% endif %}</p>
-            <p class="text-center"><strong>List:</strong> {{ list_name }}</p><br><br><br></h3><h4>
-            <h4><p class="text-center"><a href="{% url 'list_view' item.list_id.id %}"><button>Back</button></a></p></h4>
-        <br><br>
-
-        <figure class="text-center">
-          <blockquote class="blockquote">
-              <h3><p class="text-success">"A goal without a plan is just a wish"</p></h3>
-          </blockquote>
-          <h4><figcaption class="blockquote-footer"><p class="text-success">
-            -Antoine de Saint-Exupery
-          </p></figcaption></h4>
-        </figure>
+{% extends "base.html" %}
+{% block head_title %}Item details{% endblock head_title %}
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'lists_index' %}">Your lists</a></li>
+        <li class="breadcrumb-item text-break"><a href="{% url 'list_view' item.list_id %}">{{ list_name|default:"(untitled)" }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Item</li>
+    </ol>
+</nav>
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1 class="h4 mb-3 text-break">{{ item.item_descr|default:"(empty)" }}</h1>
+        <dl class="row mb-0">
+            <dt class="col-sm-3">Status</dt>
+            <dd class="col-sm-9">
+                {% if item.item_done %}
+                <span class="badge text-bg-success">Done</span>
+                {% else %}
+                <span class="badge text-bg-secondary">Not done</span>
+                {% endif %}
+            </dd>
+            <dt class="col-sm-3">Added</dt>
+            <dd class="col-sm-9">{{ item.item_date_added|date:"M j, Y, g:i a" }} (UTC)</dd>
+            <dt class="col-sm-3">List</dt>
+            <dd class="col-sm-9 mb-0 text-break"><a href="{% url 'list_view' item.list_id %}">{{ list_name|default:"(untitled)" }}</a></dd>
+        </dl>
     </div>
-</body>
-</html>
+</div>
+{% endblock content %}
