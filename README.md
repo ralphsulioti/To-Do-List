@@ -4,21 +4,34 @@
 
 A to-do list web app built with Django and Bootstrap 5. Users can:
 
-1. Sign up and log in with a username and password, or with Google
-2. Create and delete to-do lists
-3. Add items to a list, mark them done or not done, and delete them
-4. View an item's details: its status, when it was added, and its list
-5. Sort lists by date added or name, and items by date, name or status
+- Sign up and log in with a username and password, or with Google
+- Create and delete to-do lists
+- Add items to a list, mark them done or not done, and delete them
+- View an item's details: its status, when it was added, and its list
+- Sort lists by date added or name, and items by date, name or status
 
 Each user sees only their own lists and items. The tests use Django's built-in test framework, and GitHub Actions runs them, with linting, on pull requests and pushes to `main`.
 
 ## Screenshots
 
-| A list | Your lists |
-|---|---|
-| ![A list with done and open items](docs/List_View.png) | ![The lists page](docs/Lists_View.png) |
-| **Item details** | **Home (signed out)** |
-| ![An item's details](docs/Item_View.png) | ![The home page with sign-in options](docs/Login_View.png) |
+<table>
+  <tr>
+    <th>Home (signed out)</th>
+    <th>Your lists</th>
+  </tr>
+  <tr>
+    <td valign="top"><img src="docs/Login_View.png" alt="The home page with sign-in options"></td>
+    <td valign="top"><img src="docs/Lists_View.png" alt="The lists page"></td>
+  </tr>
+  <tr>
+    <th>A list</th>
+    <th>Item details</th>
+  </tr>
+  <tr>
+    <td valign="top"><img src="docs/List_View.png" alt="A list with done and open items"></td>
+    <td valign="top"><img src="docs/Item_View.png" alt="An item's details"></td>
+  </tr>
+</table>
 
 ## Setup
 
@@ -66,11 +79,16 @@ Local signup and login work without this. To add the "Sign in with Google" butto
 
 1. In [Google Cloud Console](https://console.cloud.google.com/), open **Google Auth Platform**. If the project has never used it, click **Get started** and fill in the app name and support email. Under **Audience**, choose External, keep it in Testing, and add your Google account as a test user.
 2. Under **Clients**, create a **Web application** client with this authorized redirect URI:
-   `http://127.0.0.1:8000/accounts/google/login/callback/`
+   ```text
+   http://127.0.0.1:8000/accounts/google/login/callback/
+   ```
    Open the app at `127.0.0.1`, not `localhost`; Google treats them as different addresses.
 3. Copy the client ID and secret into your `.env` straight away; Google shows the full secret only once:
-   ```
+   ```text
    GOOGLE_CLIENT_ID=...
    GOOGLE_CLIENT_SECRET=...
    ```
-4. Restart the server with `uv run --env-file .env python todo_list_proj/manage.py runserver`. The button shows only when both values are set.
+4. Restart the server. The button shows only when both values are set:
+   ```bash
+   uv run --env-file .env python todo_list_proj/manage.py runserver
+   ```
